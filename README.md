@@ -13,11 +13,8 @@
 S1 IF-11-REG04  
 
 ### Dosen Pengampu
-**Dimas Fanny Hebrasianto Permadi, S.ST., M.Kom**
+**Cahyo Prihantoro, S.Kom., M.Eng.**
 
-### Asisten Praktikum
-Apri Pandu Wicaksono  
-Rangga Pradarrell Fathi  
 
 ### LABORATORIUM HIGH PERFORMANCE  
 FAKULTAS INFORMATIKA  
@@ -36,1432 +33,1518 @@ Aplikasi web adalah perangkat lunak yang diakses melalui browser internet tanpa 
  
 ---
  
-## 2. Framework CodeIgniter (CI)
+## 2. Node.js dan Express
  
-CodeIgniter adalah framework pengembangan aplikasi web berbasis bahasa pemrograman PHP yang bersifat open-source dan ringan (*lightweight*). CodeIgniter dirancang untuk membantu pengembang membangun aplikasi web secara lebih cepat dan terstruktur dibandingkan menulis kode PHP murni dari awal.
- 
-CodeIgniter mengadopsi pola arsitektur **MVC (Model-View-Controller)**, yaitu:
- 
-- **Model** — Bertugas mengelola data dan interaksi dengan basis data (database).
-- **View** — Bertanggung jawab menampilkan antarmuka kepada pengguna (tampilan/UI).
-- **Controller** — Menjadi jembatan antara Model dan View, memproses logika aplikasi dan mengatur alur data.
- 
-Keunggulan CodeIgniter antara lain performanya yang cepat, dokumentasinya yang lengkap, kemudahan konfigurasi, serta kompatibilitasnya yang baik dengan berbagai server hosting PHP.
+Node.js adalah runtime environment untuk JavaScript yang berjalan di luar browser, memungkinkan JavaScript digunakan pada sisi server. Express.js adalah framework Node.js yang minimalis dan fleksibel, menyediakan kumpulan fitur yang kuat untuk mengembangkan aplikasi web dan API (seperti pengaturan routing dan penanganan HTTP request).
  
 ---
  
-## 3. Framework Bootstrap
+## 3. Framework Bootstrap 5
  
-Bootstrap adalah framework CSS front-end open-source yang dikembangkan oleh tim Twitter. Bootstrap menyediakan koleksi komponen UI siap pakai seperti navigasi, tombol, form, tabel, modal, dan sebagainya, yang dapat digunakan untuk membangun tampilan antarmuka web yang responsif dan konsisten di berbagai ukuran layar.
- 
-Bootstrap menerapkan sistem **grid 12 kolom** yang fleksibel sehingga tata letak halaman dapat menyesuaikan diri (*responsive*) terhadap perangkat desktop, tablet, maupun smartphone. Penggunaan Bootstrap secara signifikan mempercepat proses desain antarmuka tanpa harus menulis CSS dari nol.
+Bootstrap adalah framework CSS front-end yang digunakan untuk merancang situs web dan aplikasi web yang responsif mobile-first. Bootstrap 5 digunakan dalam proyek ini untuk komponen antarmuka seperti navigasi, tata letak grid, modal, dan tabel dengan desain modern.
  
 ---
  
 ## 4. CRUD (Create, Read, Update, Delete)
  
-CRUD merupakan singkatan dari empat operasi dasar yang digunakan dalam pengelolaan data pada sebuah sistem informasi, yaitu:
- 
-- **Create** — Menambahkan data baru ke dalam basis data.
-- **Read** — Membaca atau menampilkan data yang sudah tersimpan.
-- **Update** — Memperbarui atau mengubah data yang sudah ada.
-- **Delete** — Menghapus data dari basis data.
- 
-Keempat operasi ini merupakan inti dari hampir seluruh aplikasi berbasis data. Dalam konteks pengembangan web, operasi CRUD umumnya dipetakan ke metode HTTP: POST (*Create*), GET (*Read*), PUT/PATCH (*Update*), dan DELETE (*Delete*).
+CRUD merupakan empat operasi fundamental pengelolaan data:
+
+-**Create**: Menambahkan data baru (menggunakan metode HTTP POST).
+-**Read**: Menampilkan data (menggunakan metode HTTP GET).
+-**Update**: Memperbarui data (menggunakan metode HTTP PUT/PATCH).
+-**Delete**: Menghapus data (menggunakan metode HTTP DELETE).
  
 ---
  
-## 5. jQuery
+## 5. jQuery & DataTables Plugin
  
-jQuery adalah library JavaScript yang ringan, cepat, dan kaya fitur. jQuery menyederhanakan berbagai operasi JavaScript yang kompleks seperti manipulasi DOM, penanganan event, animasi, dan komunikasi dengan server menggunakan AJAX, sehingga dapat ditulis dengan sintaks yang lebih singkat dan mudah dipahami.
- 
-Salah satu keunggulan jQuery adalah kompatibilitasnya lintas browser (*cross-browser compatibility*), yang memastikan kode JavaScript berjalan konsisten di berbagai browser. jQuery juga memiliki ekosistem plugin yang sangat luas, memungkinkan pengembang menambah fungsionalitas tambahan dengan mudah.
+jQuery menyederhanakan manipulasi DOM HTML dan komunikasi AJAX dengan server. DataTables adalah plugin jQuery yang populer untuk menambahkan interaksi seperti pencarian, pengurutan, dan paginasi tingkat lanjut ke tabel HTML standar menggunakan sumber data berupa JSON.
  
 ---
  
-## 6. jQuery Plugin
+## 6. JSON sebagai Basis Data File
  
-jQuery Plugin adalah ekstensi atau tambahan yang dibangun di atas library jQuery untuk menambahkan fungsionalitas tertentu yang tidak tersedia secara bawaan. Plugin jQuery ditulis menggunakan mekanisme `$.fn` sehingga dapat dipanggil langsung pada elemen-elemen jQuery yang telah diseleksi.
- 
-Contoh plugin jQuery yang umum digunakan dalam pengembangan aplikasi web antara lain:
- 
-- **jQuery Validation** — untuk validasi form secara otomatis di sisi klien.
-- **Select2** — untuk pembuatan dropdown yang lebih interaktif.
-- **SweetAlert2** — untuk menampilkan dialog/notifikasi yang lebih menarik.
-- **DataTables** — untuk menampilkan data tabel secara dinamis.
- 
----
- 
-## 7. DataTables jQuery Plugin
- 
-DataTables adalah plugin jQuery yang powerful dan populer untuk menampilkan data dalam format tabel HTML secara interaktif. DataTables secara otomatis menambahkan fitur-fitur canggih pada tabel biasa, antara lain:
- 
-- **Pencarian (*Search*)** — menyaring data secara real-time berdasarkan kata kunci.
-- **Pengurutan (*Sorting*)** — mengurutkan data berdasarkan kolom tertentu.
-- **Paginasi (*Pagination*)** — membagi data ke dalam beberapa halaman agar lebih mudah dinavigasi.
-- **Tampilan responsif** — menyesuaikan tampilan tabel di berbagai ukuran layar.
- 
-DataTables mendukung berbagai sumber data, salah satunya adalah format **JSON** (*JavaScript Object Notation*) yang dapat dimuat secara dinamis dari server menggunakan AJAX, sehingga tabel dapat menampilkan data terkini tanpa harus me-reload seluruh halaman.
- 
----
- 
-## 8. JSON (JavaScript Object Notation)
- 
-JSON adalah format pertukaran data yang ringan, mudah dibaca oleh manusia, dan mudah diproses oleh mesin. JSON menggunakan struktur pasangan *key-value* dan mendukung tipe data seperti string, angka, array, objek, boolean, dan null.
- 
-Dalam pengembangan aplikasi web modern, JSON menjadi format standar untuk pertukaran data antara server dan klien, khususnya dalam komunikasi berbasis AJAX. Contoh struktur data JSON:
- 
-```json
-{
-  "id": 1,
-  "nama": "Budi Santoso",
-  "email": "budi@example.com",
-  "jurusan": "Teknik Informatika"
-}
-```
- 
-Pada implementasi DataTables, data JSON dikirim dari server (CodeIgniter) melalui method controller yang mengembalikan response JSON, kemudian DataTables mengolah dan menampilkannya secara otomatis dalam format tabel yang interaktif.
- 
----
- 
-## 9. Basis Data (Database) dengan MySQL
- 
-MySQL adalah sistem manajemen basis data relasional (*Relational Database Management System* / RDBMS) yang paling banyak digunakan dalam pengembangan aplikasi web berbasis PHP. MySQL menggunakan bahasa **SQL (*Structured Query Language*)** untuk melakukan operasi pada data seperti penyimpanan, pengambilan, pembaruan, dan penghapusan.
- 
-Dalam pengembangan menggunakan CodeIgniter, koneksi ke basis data MySQL dikonfigurasi melalui file `application/config/database.php`. CodeIgniter menyediakan **Query Builder** (sebelumnya disebut Active Record) yang memudahkan penulisan query database secara lebih aman dan terstruktur tanpa harus menulis SQL mentah secara langsung.
+JSON (JavaScript Object Notation) adalah format ringkas untuk menyimpan dan bertukar data. Pada proyek ini, file produk.json digunakan sebagai media penyimpanan data (database berbasis file lokal) sementara alih-alih menggunakan RDBMS, memudahkan manajemen statis dan prototipe aplikasi ringan.
  
 ---
 
 ## Struktur Folder Aplikasi Jual Beli Mobil (CodeIgniter 4)
 
 ```bash
-JUALBELIMOBIL/
-├── app/
-│ ├── Config/
-│ │ ├── App.php
-│ │ └── Routes.php
-│ │
-│ ├── Controllers/
-│ │ ├── BaseController.php
-│ │ ├── MobilController.php
-│ │ └── PenjualController.php
-│ │
-│ ├── Models/
-│ │ ├── MobilModel.php
-│ │ └── PenjualModel.php
-│ │
-│ └── Views/
-│ ├── layouts/
-│ │ └── main.php
-│ │
-│ ├── mobil/
-│ │ ├── index.php
-│ │ ├── create.php
-│ │ └── edit.php
-│ │
-│ ├── penjual/
-│ │ ├── index.php
-│ │ ├── create.php
-│ │ └── edit.php
-│ │
-│ └── welcome_message.php
-├── .env
-└── 
+tokoku/
+├── data/
+│   └── produk.json          # File database JSON
+├── node_modules/            # Folder dependency instalasi npm
+├── index.html               # File front-end utama (Tampilan antarmuka)
+├── package.json             # Konfigurasi project dan daftar dependency
+├── package-lock.json        # Detail versi tree dari dependency
+└── server.js                # File back-end utama (Express Server & API)
 ```
 
 ## Keterangan Struktur
 
-- **app/Config** → Berisi konfigurasi aplikasi seperti routing dan pengaturan utama  
-- **app/Controllers** → Mengatur alur logika aplikasi (CRUD Mobil & Penjual)  
-- **app/Models** → Menghubungkan aplikasi dengan database  
-- **app/Views** → Tampilan antarmuka (Form, Tabel, Layout)  
-- **.env** → Konfigurasi environment (database, dll)  
+-**data/produk.json** → Bertindak sebagai basis data untuk menyimpan produk secara persisten menggunakan format JSON.
+-**server.js** → Mengatur server lokal, menghubungkan API (CRUD), serta melayani aset front-end (HTML).
+-**index.html** → Single Page Application yang mengatur antarmuka, form, tabel (DataTables), dan chart laporan stok. 
 
 ---
 ## 4. Cara Menjalankan Aplikasi
 
-**1. Buka folder project di VS Code**  
+**1. Buka folder tokoku di Visual Studio Code atau terminal. Pastikan NodeJS sudah terinstal di komputer Anda.**  
 
 Pastikan sudah terinstall:
-- PHP (minimal versi 7.4 / 8.x)  
-- Composer  
-- Web Server XAMPP  
+- NodeJS
 
 ---
 
 **2. Install dependency**
 
 ```bash
-composer install
+npm install
 ```
 ---
 
-**3. Konfigurasi file .env**  
+**3. Jalankan Server Node.js**  
 ```bash
-database.default.hostname = localhost
-database.default.database = jualbelimobil
-database.default.username = root
-database.default.password =
-database.default.DBDriver = MySQLi
+node server.js
 ```
 ---
-**4. Jalankan server CodeIgniter 4**
+**4. Buka Browser**
+Akses alamat berikut di browser web Anda:
 ```bash
-php spark serve
-```
----
-**5.Buka browser dan akses alamat berikut**
-```bash
-http://localhost:8081
+http://localhost:3000
 ```
 ---
 
 ## 5. Kode Program
 
-### A. `App.php`
+### A. `server.js` (Sisi Server / Back-End)
 
-```php
-<?php
-
-namespace Config;
-
-use CodeIgniter\Config\BaseConfig;
-
-class App extends BaseConfig
-{
-  public string $baseURL = 'http://localhost:8081/';
-  public string $indexPage = 'index.php';
-  public string $uriProtocol = 'REQUEST_URI';
-  public string $defaultLocale = 'en';
-  public string $appTimezone = 'UTC';
-  public string $charset = 'UTF-8';
-}
-
-```
-
-**Penjelasan `App.php`**
-
-File App.php merupakan file konfigurasi utama pada framework CodeIgniter 4 yang digunakan untuk mengatur berbagai pengaturan dasar aplikasi. Pada file ini terdapat pengaturan seperti baseURL yang menentukan alamat utama aplikasi, indexPage yang menentukan file utama, serta uriProtocol yang digunakan untuk membaca URL dari request. Selain itu, terdapat juga pengaturan seperti defaultLocale untuk bahasa, appTimezone untuk zona waktu, dan charset untuk encoding karakter. Pada aplikasi ini, baseURL diatur ke http://localhost:8081/ karena server berjalan pada port tersebut.
-
----
-
-### B. `Routes.php`
-
-```php
-<?php
-
-use CodeIgniter\Router\RouteCollection;
-
+```js
 /**
- * @var RouteCollection $routes
+ * TokoKu — Backend Node.js + Express
+ * =====================================
+ * Cara menjalankan:
+ *   1. npm install
+ *   2. node server.js
+ *   3. Buka http://localhost:3000
  */
-$routes->get('/', 'MobilController::index');
 
-// Mobil routes
-$routes->get('mobil', 'MobilController::index');
-$routes->get('mobil/create', 'MobilController::create');
-$routes->post('mobil/store', 'MobilController::store');
-$routes->get('mobil/edit/(:num)', 'MobilController::edit/$1');
-$routes->post('mobil/update/(:num)', 'MobilController::update/$1');
-$routes->get('mobil/delete/(:num)', 'MobilController::delete/$1');
-$routes->get('mobil/json', 'MobilController::getJson'); 
+const express    = require('express');
+const cors       = require('cors');
+const bodyParser = require('body-parser');
+const { v4: uuidv4 } = require('uuid');
+const path       = require('path');
+const fs         = require('fs');
 
-// Penjual routes
-$routes->get('penjual', 'PenjualController::index');
-$routes->get('penjual/create', 'PenjualController::create');
-$routes->post('penjual/store', 'PenjualController::store');
-$routes->get('penjual/json', 'PenjualController::getJson');
-$routes->get('penjual/delete/(:num)', 'PenjualController::delete/$1');
-$routes->get('penjual/edit/(:num)', 'PenjualController::edit/$1');
-$routes->post('penjual/update/(:num)', 'PenjualController::update/$1');
+const app  = express();
+const PORT = process.env.PORT || 3000;
+
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// Serve semua file statis dari folder ini
+app.use(express.static(__dirname));
+
+/* ─── Database JSON ──────────────────────────────────────── */
+const DB_FILE = path.join(__dirname, 'data', 'produk.json');
+
+function readDB() {
+  try {
+    if (!fs.existsSync(DB_FILE)) return [];
+    return JSON.parse(fs.readFileSync(DB_FILE, 'utf8'));
+  } catch(e) { return []; }
+}
+
+function writeDB(data) {
+  const dir = path.dirname(DB_FILE);
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2));
+}
+
+// Seed data awal
+if (!fs.existsSync(DB_FILE)) {
+  writeDB([
+    { id: uuidv4(), kode:'PRD-001', nama:'Laptop ASUS VivoBook 15', kategori:'Elektronik', hargaBeli:7500000, hargaJual:9500000, stok:12, satuan:'Unit', supplier:'PT. ASUS Indonesia', deskripsi:'Laptop 15.6 inch', createdAt: new Date().toISOString() },
+    { id: uuidv4(), kode:'PRD-002', nama:'Kaos Polos Premium', kategori:'Pakaian', hargaBeli:35000, hargaJual:75000, stok:150, satuan:'Pcs', supplier:'CV. Textile Jaya', deskripsi:'Cotton combed 30s', createdAt: new Date().toISOString() },
+    { id: uuidv4(), kode:'PRD-003', nama:'Mie Instan Goreng', kategori:'Makanan & Minuman', hargaBeli:2800, hargaJual:4000, stok:3, satuan:'Pcs', supplier:'PT. Indofood', deskripsi:'Rasa ayam goreng', createdAt: new Date().toISOString() },
+  ]);
+}
+
+/* ─── Routes ─────────────────────────────────────────────── */
+// Serve frontend — otomatis cari file HTML
+app.get('/', (req, res) => {
+  const candidates = ['index.html', 'Index.html'];
+  for (const f of candidates) {
+    const p = path.join(__dirname, f);
+    if (fs.existsSync(p)) return res.sendFile(p);
+  }
+  const htmlFiles = fs.readdirSync(__dirname).filter(f => f.endsWith('.html'));
+  res.send(`<h2>File tidak ditemukan!</h2><p>HTML tersedia: ${htmlFiles.join(', ') || 'tidak ada'}</p>`);
+});
+
+// GET all
+app.get('/api/produk', (req, res) => {
+  let data = readDB();
+  if (req.query.kategori) data = data.filter(p => p.kategori === req.query.kategori);
+  res.json({ status: 'success', total: data.length, data });
+});
+
+// GET one
+app.get('/api/produk/:id', (req, res) => {
+  const p = readDB().find(p => p.id === req.params.id);
+  if (!p) return res.status(404).json({ status: 'error', message: 'Tidak ditemukan' });
+  res.json({ status: 'success', data: p });
+});
+
+// POST
+app.post('/api/produk', (req, res) => {
+  const data = readDB();
+  if (data.find(p => p.kode === req.body.kode?.trim())) {
+    return res.status(400).json({ status: 'error', message: 'Kode sudah ada' });
+  }
+  const newP = { id: uuidv4(), ...req.body, createdAt: new Date().toISOString() };
+  data.push(newP);
+  writeDB(data);
+  res.status(201).json({ status: 'success', data: newP });
+});
+
+// PUT
+app.put('/api/produk/:id', (req, res) => {
+  const data = readDB();
+  const idx = data.findIndex(p => p.id === req.params.id);
+  if (idx === -1) return res.status(404).json({ status: 'error', message: 'Tidak ditemukan' });
+  data[idx] = { ...data[idx], ...req.body, updatedAt: new Date().toISOString() };
+  writeDB(data);
+  res.json({ status: 'success', data: data[idx] });
+});
+
+// DELETE
+app.delete('/api/produk/:id', (req, res) => {
+  let data = readDB();
+  const p = data.find(p => p.id === req.params.id);
+  if (!p) return res.status(404).json({ status: 'error', message: 'Tidak ditemukan' });
+  writeDB(data.filter(d => d.id !== req.params.id));
+  res.json({ status: 'success', message: `${p.nama} dihapus` });
+});
+
+/* ─── Start ──────────────────────────────────────────────── */
+app.listen(PORT, () => {
+  console.log(`\n✅ TokoKu Server: http://localhost:${PORT}`);
+  const htmlFiles = fs.readdirSync(__dirname).filter(f => f.endsWith('.html'));
+  console.log(`📄 File HTML: ${htmlFiles.join(', ') || 'TIDAK ADA!'}\n`);
+});
+
+
 ```
 
-**Penjelasan `Routes.php`**
+**Penjelasan**
 
-File Routes.php digunakan untuk mengatur routing atau pemetaan URL ke controller pada aplikasi CodeIgniter 4. Routing ini berfungsi agar setiap URL yang diakses oleh pengguna dapat diarahkan ke method tertentu pada controller.
-
-Pada bagian awal, route '/' diarahkan ke MobilController::index sehingga halaman utama aplikasi langsung menampilkan data mobil. Selanjutnya terdapat routing untuk fitur mobil yang mencakup proses CRUD, seperti menampilkan data (index), menampilkan form tambah (create), menyimpan data (store), mengedit (edit), memperbarui (update), dan menghapus data (delete). Selain itu, terdapat route mobil/json yang digunakan untuk mengambil data dalam format JSON untuk kebutuhan DataTables.
-
-Pada bagian penjual, routing juga dibuat untuk mengelola data penjual dengan fungsi yang hampir sama, yaitu menampilkan data, menambah, mengedit, memperbarui, dan menghapus data. Terdapat juga route penjual/json yang digunakan untuk menampilkan data dalam format JSON.
-
-Dengan adanya routing ini, aplikasi menjadi lebih terstruktur dan memudahkan dalam pengelolaan URL serta pengembangan fitur.
+Server dikonfigurasi untuk menerima data JSON (body-parser) dan memberikan REST API dasar (GET, POST, PUT, DELETE). Data di-baca/tulis (fs.readFileSync, fs.writeFileSync) langsung ke dalam file lokal produk.json.
 
 ---
 
-### C. `MobilController.php`
+### B. Konfigurasi `package.json`
 
-```php
-<?php
-namespace App\Controllers;
-
-use App\Models\MobilModel;
-use App\Models\PenjualModel;
-
-class MobilController extends BaseController {
-    protected $mobilModel;
-    protected $penjualModel;
-
-    public function __construct() {
-        $this->mobilModel = new MobilModel();
-        $this->penjualModel = new PenjualModel();
-    }
-
-    public function index() {
-        return view('mobil/index');
-    }
-
-    public function getJson() {
-        $data = $this->mobilModel->getMobilWithPenjual();
-
-        $result = array_map(function($row, $i) {
-            return [
-                'no' => $i + 1,
-                'merk' => $row['merk'],
-                'model' => $row['model'],
-                'tahun' => $row['tahun'],
-                'harga' => 'Rp ' . number_format($row['harga'], 0, ',', '.'),
-                'nama_penjual' => $row['nama_penjual'] ?? '-',
-            ];
-        }, $data, array_keys($data));
-
-        return $this->response->setJSON(['data' => $result]);
-    }
-
-    public function create() {
-        $data['penjual'] = $this->penjualModel->findAll();
-        return view('mobil/create', $data);
-    }
-
-    public function store() {
-        $this->mobilModel->insert([
-            'merk' => $this->request->getPost('merk'),
-            'model' => $this->request->getPost('model'),
-            'tahun' => $this->request->getPost('tahun'),
-            'harga' => $this->request->getPost('harga')
-        ]);
-
-        return redirect()->to('/mobil');
-    }
-
-    public function edit($id) {
-        $data['mobil'] = $this->mobilModel->find($id);
-        return view('mobil/edit', $data);
-    }
-
-    public function update($id) {
-        $this->mobilModel->update($id, [
-            'merk' => $this->request->getPost('merk'),
-            'model' => $this->request->getPost('model'),
-            'tahun' => $this->request->getPost('tahun'),
-            'harga' => $this->request->getPost('harga')
-        ]);
-
-        return redirect()->to('/mobil');
-    }
-
-    public function delete($id) {
-        $this->mobilModel->delete($id);
-        return redirect()->to('/mobil');
-    }
+```json
+{
+  "name": "tokoku-manajemen-produk",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "uuid": "^9.0.1"
+  }
 }
 ```
-**Penjelasan `MobilController.php`**
 
-File MobilController.php merupakan controller yang digunakan untuk mengatur seluruh logika aplikasi terkait data mobil. Controller ini menghubungkan antara view (tampilan) dan model (database) sehingga proses CRUD dapat berjalan dengan baik.
+**Penjelasan**
 
-Pada method index(), controller menampilkan halaman utama yang berisi tabel data mobil. Method getJson() digunakan untuk mengambil data dari database dalam format JSON yang akan digunakan oleh DataTables (jQuery plugin). Data yang diambil kemudian diproses menggunakan array_map() agar sesuai dengan format yang dibutuhkan sebelum dikirim sebagai response JSON.
-
-Method create() digunakan untuk menampilkan halaman form tambah data mobil, serta mengambil data penjual untuk ditampilkan dalam pilihan. Method store() digunakan untuk menyimpan data mobil yang diinput melalui form ke dalam database menggunakan method insert() dari model.
-
-Selanjutnya, method edit() digunakan untuk menampilkan data mobil yang akan diedit, sedangkan method update() digunakan untuk memperbarui data mobil yang sudah ada di database. Terakhir, method delete() digunakan untuk menghapus data mobil berdasarkan id.
-
-Dengan adanya controller ini, seluruh proses pengolahan data mobil mulai dari input, tampil, edit, hingga hapus dapat berjalan secara terstruktur.
+Menyimpan metadata aplikasi serta pustaka (dependencies) penting seperti express untuk server, cors untuk izin cross-origin, dan uuid untuk pembuatan ID Unik.
 
 ---
 
-### D. `PenjualController.php`
+### C. `index.html` (Sisi Klien / Front-End)
 
-```php
-<?php
-namespace App\Controllers;
-
-use App\Models\PenjualModel;
-
-class PenjualController extends BaseController {
-    protected $penjualModel;
-
-    public function __construct() {
-        $this->penjualModel = new PenjualModel();
-    }
-
-    public function index() {
-        $data['penjual'] = $this->penjualModel->findAll();
-        return view('penjual/index', $data);
-    }
-
-    public function create() {
-        return view('penjual/create');
-    }
-
-    public function store() {
-        $this->penjualModel->insert([
-            'nama'    => $this->request->getPost('nama'),
-            'telepon' => $this->request->getPost('telepon'),
-            'email'   => $this->request->getPost('email'),
-            'alamat'  => $this->request->getPost('alamat'),
-        ]);
-
-        return redirect()->to('/penjual');
-    }
-
-    public function edit($id) {
-        $data['penjual'] = $this->penjualModel->find($id);
-        return view('penjual/edit', $data);
-    }
-
-    public function update($id) {
-        $this->penjualModel->update($id, [
-            'nama'    => $this->request->getPost('nama'),
-            'telepon' => $this->request->getPost('telepon'),
-            'email'   => $this->request->getPost('email'),
-            'alamat'  => $this->request->getPost('alamat'),
-        ]);
-
-        return redirect()->to('/penjual');
-    }
-
-    public function delete($id) {
-        $this->penjualModel->delete($id);
-        return redirect()->to('/penjual');
-    }
-
-    public function getJson() {
-        $data = $this->penjualModel->findAll();
-
-        $result = [];
-        foreach ($data as $i => $p) {
-            $result[] = [
-                'no' => $i + 1,
-                'nama' => $p['nama'],
-                'telepon' => $p['telepon'],
-                'email' => $p['email'],
-                'alamat' => $p['alamat']
-            ];
-        }
-
-        return $this->response->setJSON(['data' => $result]);
-    }
-}
-```
-**Penjelasan `PenjualController.php`**
-
-File PenjualController.php merupakan controller yang digunakan untuk mengelola data penjual pada aplikasi. Controller ini berfungsi sebagai penghubung antara view dan model sehingga proses pengolahan data penjual dapat berjalan dengan baik.
-
-Method index() digunakan untuk menampilkan seluruh data penjual yang diambil dari database menggunakan method findAll(). Data tersebut kemudian dikirim ke view untuk ditampilkan dalam bentuk tabel. Method create() digunakan untuk menampilkan halaman form input data penjual.
-
-Method store() berfungsi untuk menyimpan data penjual yang diinput melalui form ke dalam database dengan menggunakan method insert(). Data yang diambil berasal dari input pengguna melalui getPost().
-
-Selanjutnya, method edit() digunakan untuk mengambil data penjual berdasarkan id yang akan diedit, sedangkan method update() digunakan untuk memperbarui data penjual yang sudah ada di database. Method delete() digunakan untuk menghapus data penjual berdasarkan id.
-
-Method getJson() digunakan untuk mengambil data penjual dalam format JSON yang akan digunakan oleh DataTables (jQuery plugin). Data diproses terlebih dahulu ke dalam array sebelum dikirim sebagai response JSON agar sesuai dengan format yang dibutuhkan oleh DataTables.
-
-Dengan adanya controller ini, seluruh proses CRUD data penjual dapat berjalan secara terstruktur dan terintegrasi dengan baik.
-
----
-
-### E. `Views/Mobil/Create.php`
-
-```php
-<?= $this->extend('layouts/main') ?>
-<?= $this->section('content') ?>
-
-<div class="row justify-content-center">
-  <div class="col-lg-9">
-    <div class="card">
-      <div class="card-header bg-primary text-white">
-        <h5 class="mb-0"><i class="bi bi-plus-circle me-2"></i>Tambah Data Mobil</h5>
-      </div>
-      <div class="card-body">
-        <form id="formTambah" action="/mobil/store" method="post" enctype="multipart/form-data">
-          <?= csrf_field() ?>
-
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label class="form-label fw-semibold">Penjual / Dealer</label>
-              <select name="penjual_id" class="form-select" required>
-                <option value="">-- Pilih Penjual --</option>
-                <?php foreach ($penjual as $p): ?>
-                  <option value="<?= $p['id'] ?>"><?= $p['nama'] ?></option>
-                <?php endforeach; ?>
-              </select>
-            </div>
-
-            <div class="col-md-3">
-              <label class="form-label fw-semibold">Merk</label>
-              <input type="text" name="merk" class="form-control" placeholder="Toyota, Honda..." required>
-            </div>
-
-            <div class="col-md-3">
-              <label class="form-label fw-semibold">Model</label>
-              <input type="text" name="model" class="form-control" placeholder="Avanza, Brio..." required>
-            </div>
-
-            <div class="col-md-3">
-              <label class="form-label fw-semibold">Tahun</label>
-              <input type="number" name="tahun" class="form-control" min="1990" max="2025" required>
-            </div>
-
-            <div class="col-md-3">
-              <label class="form-label fw-semibold">Harga (Rp)</label>
-              <input type="number" name="harga" class="form-control" placeholder="150000000" required>
-            </div>
-
-            <div class="col-md-3">
-              <label class="form-label fw-semibold">Warna</label>
-              <input type="text" name="warna" class="form-control" placeholder="Putih, Hitam...">
-            </div>
-
-            <div class="col-md-3">
-              <label class="form-label fw-semibold">KM Tempuh</label>
-              <input type="number" name="km_tempuh" class="form-control" placeholder="50000">
-            </div>
-
-            <div class="col-md-4">
-              <label class="form-label fw-semibold">Transmisi</label>
-              <select name="transmisi" class="form-select">
-                <option value="Manual">Manual</option>
-                <option value="Otomatis">Otomatis</option>
-              </select>
-            </div>
-
-            <div class="col-md-4">
-              <label class="form-label fw-semibold">Bahan Bakar</label>
-              <select name="bahan_bakar" class="form-select">
-                <option value="Bensin">Bensin</option>
-                <option value="Diesel">Diesel</option>
-                <option value="Listrik">Listrik</option>
-                <option value="Hybrid">Hybrid</option>
-              </select>
-            </div>
-
-            <div class="col-md-4">
-              <label class="form-label fw-semibold">Status</label>
-              <select name="status" class="form-select">
-                <option value="Tersedia">Tersedia</option>
-                <option value="Proses">Proses</option>
-                <option value="Terjual">Terjual</option>
-              </select>
-            </div>
-
-            <div class="col-12">
-              <label class="form-label fw-semibold">Foto Mobil</label>
-              <input type="file" name="foto" class="form-control" accept="image/*" id="inputFoto">
-              <div id="previewFoto" class="mt-2 d-none">
-                <img id="gambarPreview" src="" alt="Preview" style="max-height:200px; border-radius:8px;">
-              </div>
-            </div>
-
-            <div class="col-12">
-              <label class="form-label fw-semibold">Deskripsi</label>
-              <textarea name="deskripsi" class="form-control" rows="3" placeholder="Kondisi mobil, kelengkapan surat, dll..."></textarea>
-            </div>
-
-            <div class="col-12 d-flex gap-2">
-              <button type="submit" class="btn btn-primary">
-                <i class="bi bi-save me-1"></i>Simpan Data
-              </button>
-              <a href="/mobil" class="btn btn-outline-secondary">
-                <i class="bi bi-arrow-left me-1"></i>Kembali
-              </a>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<?= $this->endSection() ?>
-
-<?= $this->section('scripts') ?>
-<script>
-$(document).ready(function() {
-    // Preview foto sebelum upload (jQuery plugin usage)
-    $('#inputFoto').on('change', function() {
-        var file = this.files[0];
-        if (file) {
-            var reader = new FileReader();
-            reader.onload = function(e) {
-                $('#gambarPreview').attr('src', e.target.result);
-                $('#previewFoto').removeClass('d-none');
-            };
-            reader.readAsDataURL(file);
-        }
-    });
-
-    // jQuery Validate plugin
-    $('#formTambah').validate({
-        rules: {
-            merk:   { required: true, minlength: 2 },
-            model:  { required: true, minlength: 2 },
-            tahun:  { required: true, digits: true, min: 1990, max: 2025 },
-            harga:  { required: true, digits: true, min: 1 },
-        },
-        messages: {
-            merk:  { required: 'Merk wajib diisi', minlength: 'Minimal 2 karakter' },
-            model: { required: 'Model wajib diisi' },
-            tahun: { required: 'Tahun wajib diisi', min: 'Minimal 1990', max: 'Maksimal 2025' },
-            harga: { required: 'Harga wajib diisi', min: 'Harga harus lebih dari 0' },
-        },
-        errorClass: 'is-invalid',
-        validClass: 'is-valid',
-        errorElement: 'div',
-        errorPlacement: function(error, element) {
-            error.addClass('invalid-feedback');
-            element.closest('.col-md-3, .col-md-4, .col-12, .col-md-6').append(error);
-        }
-    });
-});
-</script>
-<?= $this->endSection() ?>
-```
-**Penjelasan `Views/Mobil/Create.php`**
-
-File create.php merupakan bagian dari view yang digunakan untuk menampilkan form input data mobil kepada pengguna. Pada halaman ini, pengguna dapat mengisi data seperti merk, model, tahun, harga, serta mengunggah foto mobil.
-
-Form menggunakan method POST dengan action /mobil/store, yang berarti data akan diproses oleh method store() pada MobilController. Atribut enctype="multipart/form-data" digunakan agar form dapat mengirim file berupa gambar.
-
-Fungsi csrf_field() digunakan untuk memberikan keamanan tambahan dari serangan CSRF. Setiap input memiliki atribut name yang sesuai dengan data yang diambil di controller menggunakan getPost().
-
-Selain itu, terdapat script jQuery yang digunakan untuk menampilkan preview gambar sebelum diunggah menggunakan FileReader, serta validasi form menggunakan plugin jQuery Validate agar input tidak kosong sebelum dikirim ke server.
-
----
-
-### F. `Views/Mobil/Edit.php`
-
-```php
-<?= $this->extend('layouts/main') ?>
-<?= $this->section('content') ?>
-
-<div class="row justify-content-center">
-  <div class="col-lg-9">
-    <div class="card">
-      <div class="card-header bg-warning">
-        <h5 class="mb-0"><i class="bi bi-pencil-square me-2"></i>Edit Data Mobil</h5>
-      </div>
-      <div class="card-body">
-        <form id="formEdit" action="/mobil/update/<?= $mobil['id'] ?>" method="post" enctype="multipart/form-data">
-          <?= csrf_field() ?>
-
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label class="form-label fw-semibold">Penjual / Dealer</label>
-              <select name="penjual_id" class="form-select">
-                <option value="">-- Pilih Penjual --</option>
-                <?php foreach ($penjual as $p): ?>
-                  <option value="<?= $p['id'] ?>" <?= $p['id'] == $mobil['penjual_id'] ? 'selected' : '' ?>>
-                    <?= $p['nama'] ?>
-                  </option>
-                <?php endforeach; ?>
-              </select>
-            </div>
-
-            <div class="col-md-3">
-              <label class="form-label fw-semibold">Merk</label>
-              <input type="text" name="merk" class="form-control" value="<?= $mobil['merk'] ?>" required>
-            </div>
-
-            <div class="col-md-3">
-              <label class="form-label fw-semibold">Model</label>
-              <input type="text" name="model" class="form-control" value="<?= $mobil['model'] ?>" required>
-            </div>
-
-            <div class="col-md-3">
-              <label class="form-label fw-semibold">Tahun</label>
-              <input type="number" name="tahun" class="form-control" value="<?= $mobil['tahun'] ?>" min="1990" max="2025" required>
-            </div>
-
-            <div class="col-md-3">
-              <label class="form-label fw-semibold">Harga (Rp)</label>
-              <input type="number" name="harga" class="form-control" value="<?= $mobil['harga'] ?>" required>
-            </div>
-
-            <div class="col-md-3">
-              <label class="form-label fw-semibold">Warna</label>
-              <input type="text" name="warna" class="form-control" value="<?= $mobil['warna'] ?>">
-            </div>
-
-            <div class="col-md-3">
-              <label class="form-label fw-semibold">KM Tempuh</label>
-              <input type="number" name="km_tempuh" class="form-control" value="<?= $mobil['km_tempuh'] ?>">
-            </div>
-
-            <div class="col-md-4">
-              <label class="form-label fw-semibold">Transmisi</label>
-              <select name="transmisi" class="form-select">
-                <option value="Manual"   <?= $mobil['transmisi'] == 'Manual'   ? 'selected' : '' ?>>Manual</option>
-                <option value="Otomatis" <?= $mobil['transmisi'] == 'Otomatis' ? 'selected' : '' ?>>Otomatis</option>
-              </select>
-            </div>
-
-            <div class="col-md-4">
-              <label class="form-label fw-semibold">Bahan Bakar</label>
-              <select name="bahan_bakar" class="form-select">
-                <?php foreach (['Bensin','Diesel','Listrik','Hybrid'] as $bb): ?>
-                  <option value="<?= $bb ?>" <?= $mobil['bahan_bakar'] == $bb ? 'selected' : '' ?>><?= $bb ?></option>
-                <?php endforeach; ?>
-              </select>
-            </div>
-
-            <div class="col-md-4">
-              <label class="form-label fw-semibold">Status</label>
-              <select name="status" class="form-select">
-                <?php foreach (['Tersedia','Proses','Terjual'] as $st): ?>
-                  <option value="<?= $st ?>" <?= $mobil['status'] == $st ? 'selected' : '' ?>><?= $st ?></option>
-                <?php endforeach; ?>
-              </select>
-            </div>
-
-            <div class="col-12">
-              <label class="form-label fw-semibold">Foto Mobil</label>
-              <?php if ($mobil['foto']): ?>
-                <div class="mb-2">
-                  <img src="/uploads/<?= $mobil['foto'] ?>" style="max-height:150px; border-radius:8px;">
-                  <small class="text-muted d-block mt-1">Upload foto baru untuk mengganti</small>
-                </div>
-              <?php endif; ?>
-              <input type="file" name="foto" class="form-control" accept="image/*" id="inputFotoEdit">
-              <div id="previewFotoEdit" class="mt-2 d-none">
-                <img id="gambarPreviewEdit" src="" style="max-height:150px; border-radius:8px;">
-              </div>
-            </div>
-
-            <div class="col-12">
-              <label class="form-label fw-semibold">Deskripsi</label>
-              <textarea name="deskripsi" class="form-control" rows="3"><?= $mobil['deskripsi'] ?></textarea>
-            </div>
-
-            <div class="col-12 d-flex gap-2">
-              <button type="submit" class="btn btn-warning">
-                <i class="bi bi-save me-1"></i>Update Data
-              </button>
-              <a href="/mobil" class="btn btn-outline-secondary">
-                <i class="bi bi-arrow-left me-1"></i>Kembali
-              </a>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<?= $this->endSection() ?>
-<?= $this->section('scripts') ?>
-<script>
-$(document).ready(function() {
-    $('#inputFotoEdit').on('change', function() {
-        var file = this.files[0];
-        if (file) {
-            var reader = new FileReader();
-            reader.onload = function(e) {
-                $('#gambarPreviewEdit').attr('src', e.target.result);
-                $('#previewFotoEdit').removeClass('d-none');
-            };
-            reader.readAsDataURL(file);
-        }
-    });
-
-    $('#formEdit').validate({
-        rules: {
-            merk:  { required: true },
-            model: { required: true },
-            tahun: { required: true, digits: true },
-            harga: { required: true, digits: true },
-        },
-        errorClass: 'is-invalid',
-        errorElement: 'div',
-        errorPlacement: function(error, element) {
-            error.addClass('invalid-feedback');
-            element.closest('[class^="col-"]').append(error);
-        }
-    });
-});
-</script>
-<?= $this->endSection() ?>
-```
-**Penjelasan `ViewsMobil/Edit.php`**
-File edit.php merupakan view yang digunakan untuk menampilkan form edit data mobil. Pada halaman ini, seluruh input telah terisi otomatis berdasarkan data yang diambil dari database sehingga pengguna dapat langsung melakukan perubahan tanpa menginput ulang dari awal.
-
-Form menggunakan method POST dengan action /mobil/update/{id}, yang akan diproses oleh method update() pada MobilController. Data ditampilkan menggunakan variabel $mobil sehingga setiap field seperti merk, model, tahun, dan lainnya dapat ditampilkan sesuai data yang dipilih.
-
-Selain itu, terdapat fitur untuk menampilkan foto mobil yang sudah tersimpan sebelumnya. Jika pengguna ingin mengganti foto, maka dapat mengunggah file baru melalui input file yang tersedia.
-
-Script jQuery digunakan untuk menampilkan preview gambar baru sebelum diupload menggunakan FileReader, sehingga meningkatkan pengalaman pengguna. Selain itu, digunakan plugin jQuery Validate untuk memastikan data yang diinput valid sebelum dikirim ke server.
-
-Dengan adanya halaman ini, proses update data mobil dapat dilakukan dengan mudah, terstruktur, dan user-friendly.
-
----
-
-### G. `Views\mobil\index.php`
-
-```php
-<?= $this->extend('layouts/main') ?>
-<?= $this->section('content') ?>
-
-<div class="d-flex justify-content-between align-items-center mb-3">
-  <h4 class="mb-0"><i class="bi bi-table me-2 text-primary"></i>Data Mobil</h4>
-  <a href="/mobil/create" class="btn btn-primary">
-    <i class="bi bi-plus-lg me-1"></i>Tambah Mobil
-  </a>
-</div>
-
-<div class="card">
-  <div class="card-body">
-    <table id="tabelMobil" class="table table-bordered table-hover align-middle w-100">
-      <thead class="table-dark">
-        <tr>
-          <th>No</th>
-          <th>Foto</th>
-          <th>Merk / Model</th>
-          <th>Tahun</th>
-          <th>Harga</th>
-          <th>KM</th>
-          <th>Transmisi</th>
-          <th>Status</th>
-          <th>Penjual</th>
-          <th>Aksi</th>
-        </tr>
-      </thead>
-    </table>
-  </div>
-</div>
-
-<?= $this->endSection() ?>
-
-<?= $this->section('scripts') ?>
-<script>
-$(document).ready(function() {
-    $('#tabelMobil').DataTable({
-        processing: true, 
-        ajax: {
-            url: '/mobil/json',
-            type: 'GET',
-            dataSrc: 'data'
-        },
-        columns: [
-            { data: 'no' },
-            {
-                data: 'foto',
-                render: function(data) {
-                    if (data) {
-                        return '<img src="/uploads/' + data + '" class="table-img" loading="lazy">';
-                    }
-                    return '-';
-                }
-            },
-            {
-                data: 'merk',
-                render: function(data, type, row) {
-                    return '<strong>' + data + '</strong><br><small class="text-muted">' + row.model + '</small>';
-                }
-            },
-            { data: 'tahun' },
-            { data: 'harga' },
-            { data: 'km_tempuh' },
-            { data: 'transmisi' },
-            {
-                data: 'status',
-                render: function(data) {
-                    let cls = {
-                        'Tersedia': 'badge-tersedia',
-                        'Terjual': 'badge-terjual',
-                        'Proses': 'badge-proses'
-                    };
-                    return '<span class="badge ' + (cls[data] || 'bg-secondary') + '">' + data + '</span>';
-                }
-            },
-            { data: 'nama_penjual' },
-            {
-                data: 'id',
-                render: function(data) {
-                    return `
-                        <a href="/mobil/edit/${data}" class="btn btn-warning btn-sm me-1">
-                            <i class="bi bi-pencil"></i>
-                        </a>
-                        <a href="/mobil/delete/${data}" class="btn btn-danger btn-sm"
-                           onclick="return confirm('Yakin hapus?')">
-                            <i class="bi bi-trash"></i>
-                        </a>
-                    `;
-                }
-            }
-        ],
-        language: {
-            url: 'https://cdn.datatables.net/plug-ins/1.13.6/i18n/id.json'
-        }
-    });
-});
-</script>
-<?= $this->endSection() ?>
-```
-**Penjelasan `Views/Mobil/Indext.php`**
-
-File index.php merupakan halaman utama yang digunakan untuk menampilkan data mobil dalam bentuk tabel. Halaman ini menggunakan plugin DataTables (jQuery) sehingga data dapat ditampilkan secara dinamis, interaktif, dan responsif.
-
-Pada bagian atas terdapat tombol "Tambah Mobil" yang mengarahkan pengguna ke halaman form input data. Tabel yang digunakan memiliki id tabelMobil dan akan diisi secara otomatis menggunakan data dari server dalam format JSON.
-
-Data diambil melalui AJAX dari endpoint /mobil/json yang berasal dari method getJson() pada MobilController. Data tersebut kemudian dipetakan ke dalam kolom-kolom tabel seperti nomor, foto, merk/model, tahun, harga, dan lainnya.
-
-Beberapa kolom menggunakan fungsi render, seperti:
-
-Kolom foto untuk menampilkan gambar mobil.
-Kolom merk/model untuk menampilkan dua informasi dalam satu kolom.
-Kolom status untuk menampilkan badge dengan warna berbeda sesuai status.
-Kolom aksi untuk tombol edit dan hapus.
-
-Selain itu, digunakan fitur processing dari DataTables untuk meningkatkan performa saat memuat data. Bahasa tabel juga disesuaikan ke Bahasa Indonesia menggunakan file konfigurasi dari CDN.
-
-Dengan adanya DataTables ini, aplikasi memenuhi requirement penggunaan jQuery plugin dan JSON data, serta membuat tampilan data menjadi lebih profesional dan mudah digunakan.
-
----
-
-### I. `Views\penjual\create`
-
-```php
-<!-- penjual/create.php -->
-<?= $this->extend('layouts/main') ?>
-<?= $this->section('content') ?>
-<div class="row justify-content-center">
-  <div class="col-lg-7">
-    <div class="card">
-      <div class="card-header bg-success text-white">
-        <h5 class="mb-0"><i class="bi bi-person-plus me-2"></i>Tambah Penjual</h5>
-      </div>
-      <div class="card-body">
-        <form id="formPenjual" action="/penjual/store" method="post">
-          <?= csrf_field() ?>
-          <div class="mb-3">
-            <label class="form-label fw-semibold">Nama Lengkap / Nama Dealer</label>
-            <input type="text" name="nama" class="form-control" required>
-          </div>
-          <div class="mb-3">
-            <label class="form-label fw-semibold">Nomor Telepon</label>
-            <input type="text" name="telepon" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label class="form-label fw-semibold">Email</label>
-            <input type="email" name="email" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label class="form-label fw-semibold">Alamat</label>
-            <textarea name="alamat" class="form-control" rows="3"></textarea>
-          </div>
-          <div class="d-flex gap-2">
-            <button type="submit" class="btn btn-success"><i class="bi bi-save me-1"></i>Simpan</button>
-            <a href="/penjual" class="btn btn-outline-secondary"><i class="bi bi-arrow-left me-1"></i>Kembali</a>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-<?= $this->endSection() ?>
-<?= $this->section('scripts') ?>
-<script>
-$(document).ready(function() {
-    $('#formPenjual').validate({
-        rules: { nama: { required: true, minlength: 3 } },
-        messages: { nama: { required: 'Nama wajib diisi' } },
-        errorClass: 'is-invalid',
-        errorElement: 'div',
-        errorPlacement: function(error, element) {
-            error.addClass('invalid-feedback');
-            element.parent().append(error);
-        }
-    });
-});
-</script>
-<?= $this->endSection() ?>
-```
-**Penjelasan `Views/penjual/create.php`**
-
-File create.php pada folder penjual merupakan view yang digunakan untuk menampilkan form input data penjual. Halaman ini memungkinkan pengguna untuk menambahkan data penjual baru ke dalam sistem.
-
-Form menggunakan method POST dengan action /penjual/store, yang berarti data akan diproses oleh method store() pada PenjualController. Fungsi csrf_field() digunakan untuk memberikan perlindungan terhadap serangan CSRF sehingga keamanan aplikasi lebih terjamin.
-
-Pada form terdapat beberapa input seperti nama, nomor telepon, email, dan alamat. Field nama bersifat wajib diisi karena merupakan identitas utama penjual, sedangkan field lainnya bersifat opsional.
-
-Selain itu, digunakan jQuery Validate sebagai plugin untuk melakukan validasi form di sisi client. Validasi ini memastikan bahwa input nama wajib diisi dengan minimal 3 karakter sebelum data dikirim ke server. Jika terjadi kesalahan, pesan error akan ditampilkan secara langsung di bawah input.
-
-Dengan adanya validasi ini, aplikasi menjadi lebih interaktif dan membantu pengguna dalam menginput data dengan benar sebelum disimpan ke database.
-
----
-
-### I. `Views\penjual\edit.php`
-
-```php
-<?= $this->extend('layouts/main') ?>
-<?= $this->section('content') ?>
-
-<div class="row justify-content-center">
-  <div class="col-lg-7">
-    <div class="card">
-      <div class="card-header bg-primary text-white">
-        <h5 class="mb-0">
-          <i class="bi bi-pencil-square me-2"></i>Edit Penjual
-        </h5>
-      </div>
-      <div class="card-body">
-        <form action="/penjual/update/<?= $penjual['id'] ?>" method="post">
-          <?= csrf_field() ?>
-
-          <div class="mb-3">
-            <label class="form-label fw-semibold">Nama</label>
-            <input type="text" name="nama" class="form-control"
-                   value="<?= $penjual['nama'] ?>" required>
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label fw-semibold">Telepon</label>
-            <input type="text" name="telepon" class="form-control"
-                   value="<?= $penjual['telepon'] ?>">
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label fw-semibold">Email</label>
-            <input type="email" name="email" class="form-control"
-                   value="<?= $penjual['email'] ?>">
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label fw-semibold">Alamat</label>
-            <textarea name="alamat" class="form-control" rows="3"><?= $penjual['alamat'] ?></textarea>
-          </div>
-
-          <div class="d-flex gap-2">
-            <button type="submit" class="btn btn-primary">
-              <i class="bi bi-save me-1"></i>Update
-            </button>
-            <a href="/penjual" class="btn btn-outline-secondary">
-              <i class="bi bi-arrow-left me-1"></i>Kembali
-            </a>
-          </div>
-
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<?= $this->endSection() ?>
-```
-
-**Penjelasan `Views/penjual/edit.php`**
-File edit.php pada folder penjual digunakan untuk menampilkan form edit data penjual yang sudah ada. Halaman ini memungkinkan pengguna untuk memperbarui informasi penjual seperti nama, telepon, email, dan alamat.
-
-Form menggunakan method POST dengan action /penjual/update/{id}, yang berarti data akan dikirim ke method update() pada PenjualController berdasarkan id penjual yang dipilih.
-
-Berbeda dengan halaman create, pada halaman ini setiap input sudah terisi otomatis dengan data lama menggunakan variabel $penjual. Hal ini memudahkan pengguna untuk melakukan perubahan tanpa harus menginput ulang seluruh data.
-
-Penggunaan csrf_field() tetap diterapkan untuk menjaga keamanan aplikasi dari serangan CSRF.
-
-Pada bagian bawah terdapat dua tombol, yaitu tombol Update untuk menyimpan perubahan dan tombol Kembali untuk kembali ke halaman daftar penjual.
-
-Dengan adanya fitur edit ini, aplikasi telah memenuhi salah satu fungsi utama dalam konsep CRUD yaitu Update, sehingga data dapat diperbarui sesuai kebutuhan pengguna.
-
----
-
-### J. `Views\penjual\index.php`
-
-```php
-<?= $this->extend('layouts/main') ?>
-<?= $this->section('content') ?>
-
-<div class="d-flex justify-content-between align-items-center mb-3">
-  <h4><i class="bi bi-people me-2 text-primary"></i>Data Penjual</h4>
-  <a href="/penjual/create" class="btn btn-primary">
-    <i class="bi bi-person-plus me-1"></i>Tambah Penjual
-  </a>
-</div>
-
-<div class="card">
-  <div class="card-body">
-    <table id="tabelPenjual" class="table table-bordered table-hover w-100">
-      <thead class="table-dark">
-        <tr>
-          <th>No</th>
-          <th>Nama</th>
-          <th>Telepon</th>
-          <th>Email</th>
-          <th>Alamat</th>
-          <th>Aksi</th> 
-        </tr>
-      </thead>
-    </table>
-  </div>
-</div>
-
-<?= $this->endSection() ?>
-
-<?= $this->section('scripts') ?>
-<script>
-$(document).ready(function() {
-    $('#tabelPenjual').DataTable({
-        processing: true,
-        ajax: {
-            url: '/penjual/json',
-            dataSrc: 'data'
-        },
-        columns: [
-            { data: 'no' },
-            { data: 'nama' },
-            { data: 'telepon' },
-            { data: 'email' },
-            { data: 'alamat' },
-            {
-                data: 'id', 
-                orderable: false,
-                render: function(data) {
-                    return `
-                        <a href="/penjual/edit/${data}" class="btn btn-warning btn-sm me-1">
-                            <i class="bi bi-pencil"></i>
-                        </a>
-                        <a href="/penjual/delete/${data}" 
-                          class="btn btn-danger btn-sm"
-                          onclick="return confirm('Yakin hapus data ini?')">
-                          <i class="bi bi-trash"></i>
-                        </a>
-                    `;
-                }
-            }
-        ],
-        language: {
-            url: 'https://cdn.datatables.net/plug-ins/1.13.6/i18n/id.json'
-        }
-    });
-});
-</script>
-<?= $this->endSection() ?>
-```
-
-
-**Penjelasan `Views/penjual/index.php`**
-
-File index.php pada folder penjual digunakan untuk menampilkan daftar data penjual dalam bentuk tabel. Halaman ini memanfaatkan plugin DataTables (jQuery) untuk menampilkan data secara dinamis, interaktif, dan mudah digunakan.
-
-Pada bagian atas terdapat tombol "Tambah Penjual" yang berfungsi untuk mengarahkan pengguna ke halaman form input data penjual baru.
-
-Tabel dengan id tabelPenjual akan diisi secara otomatis menggunakan data dari server dalam format JSON melalui endpoint /penjual/json, yang berasal dari method getJson() pada PenjualController.
-
-Kolom tabel meliputi nomor, nama, telepon, email, alamat, serta aksi. Pada kolom aksi, terdapat tombol edit dan hapus yang memungkinkan pengguna untuk mengubah atau menghapus data penjual.
-
-Fungsi render digunakan untuk membuat tombol aksi secara dinamis berdasarkan id data. Selain itu, terdapat konfirmasi sebelum penghapusan data untuk menghindari kesalahan pengguna.
-
-Penggunaan DataTables juga memungkinkan fitur seperti pencarian, pagination, dan sorting secara otomatis, sehingga meningkatkan pengalaman pengguna.
-
-Dengan adanya halaman ini, aplikasi telah memenuhi fitur Read (menampilkan data) dalam konsep CRUD serta memenuhi syarat penggunaan jQuery plugin dan JSON dalam tugas praktikum.
-
----
-
-### K. `Views/layouts/main.php`
-
-```php
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GarasiMotuba<?= $title ?? 'Jual Beli Mobil' ?></title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TokoKu — Manajemen Produk</title>
 
   <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
   <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
-  <!-- DataTables + Bootstrap 5 style -->
-  <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <!-- DataTables Bootstrap5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/datatables.net-bs5@1.13.8/css/dataTables.bootstrap5.min.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
 
   <style>
-  body { background-color: #f4f8fb; }
+    :root {
+      --bg:       #0d0d0d;
+      --surface:  #161616;
+      --card:     #1e1e1e;
+      --border:   #2a2a2a;
+      --border2:  #333;
+      --accent:   #e8ff47;
+      --accent2:  #ff6b35;
+      --text:     #f0f0f0;
+      --muted:    #888;
+      --muted2:   #555;
+      --success:  #4ade80;
+      --danger:   #f87171;
+      --warning:  #fbbf24;
+      --info:     #60a5fa;
+    }
 
-  .navbar {
-    background: linear-gradient(90deg, #0d6efd, #0b5ed7);
-  }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  .navbar-brand {
-    font-weight: 700;
-    font-size: 1.4rem;
-  }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
 
-  .card {
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  }
+    h1,h2,h3,h4,h5,h6 { font-family: 'Syne', sans-serif; }
 
-  .card-header {
-    background-color: #0d6efd !important;
-    color: #fff;
-    border-radius: 12px 12px 0 0 !important;
-  }
+    /* ── SIDEBAR ─────────────────────────────────────────── */
+    .sidebar {
+      position: fixed; top: 0; left: 0;
+      width: 240px; height: 100vh;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      display: flex; flex-direction: column;
+      z-index: 200;
+    }
 
-  .btn-primary {
-    background-color: #0d6efd;
-    border: none;
-  }
+    .sidebar-brand {
+      padding: 24px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .brand-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent); color: #000;
+      padding: 6px 14px; border-radius: 4px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800; font-size: 16px;
+      letter-spacing: -.5px;
+    }
+    .brand-badge i { font-size: 18px; }
+    .brand-sub {
+      font-size: 11px; color: var(--muted); margin-top: 8px;
+      text-transform: uppercase; letter-spacing: 1.5px; font-weight: 500;
+    }
 
-  .btn-primary:hover {
-    background-color: #0b5ed7;
-  }
+    .sidebar-nav { flex: 1; padding: 16px 12px; }
+    .nav-section-label {
+      font-size: 10px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--muted2);
+      padding: 12px 10px 6px;
+    }
+    .s-nav-link {
+      display: flex; align-items: center; gap: 10px;
+      color: var(--muted); padding: 10px 12px;
+      border-radius: 6px; font-size: 14px; font-weight: 500;
+      cursor: pointer; transition: all .15s;
+      text-decoration: none; margin-bottom: 2px;
+      border: 1px solid transparent;
+    }
+    .s-nav-link i { font-size: 16px; width: 18px; text-align: center; }
+    .s-nav-link:hover { color: var(--text); background: var(--card); border-color: var(--border); }
+    .s-nav-link.active {
+      color: #000; background: var(--accent);
+      border-color: var(--accent); font-weight: 700;
+    }
+    .s-nav-link.active i { color: #000; }
 
-  .table thead {
-    background-color: #0d6efd;
-    color: white;
-  }
+    .sidebar-bottom {
+      padding: 16px 20px; border-top: 1px solid var(--border);
+    }
+    .stock-summary {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 8px; padding: 12px;
+    }
+    .stock-summary p { font-size: 11px; color: var(--muted); margin: 0 0 4px; text-transform: uppercase; letter-spacing: 1px; }
+    .stock-summary span { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800; color: var(--accent); }
 
-  .badge-tersedia { background-color: #0d6efd; }
-  .badge-terjual  { background-color: #dc3545; }
-  .badge-proses   { background-color: #ffc107; color: #000; }
+    /* ── TOPBAR ──────────────────────────────────────────── */
+    .topbar {
+      position: fixed; top: 0; left: 240px; right: 0; height: 60px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px; z-index: 100;
+    }
+    .topbar-left { display: flex; align-items: center; gap: 12px; }
+    .page-crumb {
+      font-size: 13px; color: var(--muted);
+    }
+    .page-crumb span { color: var(--text); font-weight: 600; }
+    .topbar-right { display: flex; align-items: center; gap: 10px; }
+    .topbar-clock {
+      font-family: 'Syne', sans-serif;
+      font-size: 13px; font-weight: 700;
+      color: var(--accent); letter-spacing: 1px;
+      background: var(--card); border: 1px solid var(--border);
+      padding: 4px 12px; border-radius: 4px;
+    }
 
-  .table-img {
-    width: 60px;
-    height: 45px;
-    object-fit: cover;
-    border-radius: 6px;
-  }
-</style>
+    /* ── MAIN ────────────────────────────────────────────── */
+    .main {
+      margin-left: 240px; margin-top: 60px;
+      padding: 28px; min-height: calc(100vh - 60px);
+    }
+
+    .page-sec { display: none; }
+    .page-sec.active { display: block; }
+
+    /* ── PAGE HEADER ─────────────────────────────────────── */
+    .pg-header {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .pg-header h2 { font-size: 26px; font-weight: 800; color: var(--text); }
+    .pg-header p { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+    /* ── STAT CARDS ──────────────────────────────────────── */
+    .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+    .stat-box {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 10px; padding: 20px;
+      position: relative; overflow: hidden;
+      transition: border-color .2s;
+    }
+    .stat-box:hover { border-color: var(--border2); }
+    .stat-box-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; }
+    .stat-box-icon {
+      width: 38px; height: 38px; border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+    }
+    .stat-box-icon.yellow { background: rgba(232,255,71,.12); color: var(--accent); }
+    .stat-box-icon.orange { background: rgba(255,107,53,.12); color: var(--accent2); }
+    .stat-box-icon.green  { background: rgba(74,222,128,.12); color: var(--success); }
+    .stat-box-icon.blue   { background: rgba(96,165,250,.12); color: var(--info); }
+    .stat-box-trend {
+      font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 20px;
+    }
+    .stat-box-trend.up   { background: rgba(74,222,128,.15); color: var(--success); }
+    .stat-box-trend.down { background: rgba(248,113,113,.15); color: var(--danger); }
+    .stat-num { font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 800; color: var(--text); }
+    .stat-lbl { font-size: 12px; color: var(--muted); margin-top: 2px; font-weight: 500; }
+
+    /* ── PANEL ───────────────────────────────────────────── */
+    .panel {
+      background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    }
+    .panel-head {
+      padding: 16px 20px; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .panel-head h5 {
+      font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 700;
+      margin: 0; color: var(--text);
+    }
+    .panel-body { padding: 20px; }
+
+    /* ── BUTTONS ─────────────────────────────────────────── */
+    .btn { font-family: 'DM Sans', sans-serif; font-weight: 600; border-radius: 6px; font-size: 14px; }
+    .btn-accent {
+      background: var(--accent); color: #000; border: none;
+      font-weight: 700;
+    }
+    .btn-accent:hover { background: #d4eb3a; color: #000; }
+    .btn-ghost {
+      background: transparent; color: var(--muted);
+      border: 1px solid var(--border);
+    }
+    .btn-ghost:hover { color: var(--text); border-color: var(--border2); background: var(--surface); }
+    .btn-danger-ghost {
+      background: transparent; color: var(--danger);
+      border: 1px solid rgba(248,113,113,.3);
+    }
+    .btn-danger-ghost:hover { background: rgba(248,113,113,.1); color: var(--danger); border-color: var(--danger); }
+
+    /* ── FORM ────────────────────────────────────────────── */
+    .form-label { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .8px; margin-bottom: 6px; }
+    .form-control, .form-select {
+      background: var(--surface); border: 1px solid var(--border);
+      color: var(--text); border-radius: 6px; padding: 10px 14px;
+      font-size: 14px; font-family: 'DM Sans', sans-serif;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .form-control:focus, .form-select:focus {
+      background: var(--surface); color: var(--text);
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(232,255,71,.15);
+    }
+    .form-control::placeholder { color: var(--muted2); }
+    .form-select option { background: var(--card); color: var(--text); }
+    .form-control.is-invalid, .form-select.is-invalid { border-color: var(--danger); }
+    .invalid-feedback { color: var(--danger); font-size: 12px; }
+    .req { color: var(--accent2); }
+
+    /* ── TABLE ───────────────────────────────────────────── */
+    .table { color: var(--text); }
+    .table thead th {
+      background: var(--surface); color: var(--muted);
+      font-family: 'Syne', sans-serif; font-size: 11px;
+      font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase;
+      border-color: var(--border); padding: 12px 16px;
+    }
+    .table tbody td { border-color: var(--border); padding: 13px 16px; font-size: 14px; vertical-align: middle; }
+    .table tbody tr { transition: background .15s; }
+    .table tbody tr:hover { background: rgba(255,255,255,.03); }
+
+    /* DataTables dark overrides */
+    .dataTables_wrapper { color: var(--text); }
+    .dataTables_wrapper .dataTables_filter input,
+    .dataTables_wrapper .dataTables_length select {
+      background: var(--surface); border: 1px solid var(--border);
+      color: var(--text); border-radius: 6px; padding: 6px 10px;
+    }
+    .dataTables_wrapper .dataTables_filter label,
+    .dataTables_wrapper .dataTables_length label,
+    .dataTables_wrapper .dataTables_info { color: var(--muted); font-size: 13px; }
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+      background: var(--surface) !important; color: var(--muted) !important;
+      border: 1px solid var(--border) !important; border-radius: 4px !important;
+      margin: 0 2px !important;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+    .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+      background: var(--accent) !important; color: #000 !important;
+      border-color: var(--accent) !important;
+    }
+
+    /* ── BADGES ──────────────────────────────────────────── */
+    .kat-badge {
+      display: inline-block; padding: 3px 10px; border-radius: 4px;
+      font-size: 11px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+    }
+    .kat-elektronik { background: rgba(96,165,250,.15); color: var(--info); }
+    .kat-pakaian    { background: rgba(232,255,71,.12); color: var(--accent); }
+    .kat-makanan    { background: rgba(255,107,53,.15); color: var(--accent2); }
+    .kat-lainnya    { background: rgba(74,222,128,.12); color: var(--success); }
+
+    .stok-badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 12px; font-weight: 600;
+    }
+    .stok-badge.ok     { color: var(--success); }
+    .stok-badge.low    { color: var(--warning); }
+    .stok-badge.empty  { color: var(--danger); }
+
+    /* ── TOAST ───────────────────────────────────────────── */
+    .toast-wrap { position: fixed; bottom: 24px; right: 24px; z-index: 9999; display: flex; flex-direction: column; gap: 8px; }
+    .t-toast {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 8px; padding: 14px 18px;
+      display: flex; align-items: center; gap: 12px;
+      min-width: 280px; box-shadow: 0 8px 32px rgba(0,0,0,.5);
+      animation: slideUp .25s ease;
+    }
+    .t-toast.success { border-left: 3px solid var(--success); }
+    .t-toast.danger  { border-left: 3px solid var(--danger); }
+    .t-toast.warning { border-left: 3px solid var(--warning); }
+    .t-toast.info    { border-left: 3px solid var(--info); }
+    .t-toast i { font-size: 18px; }
+    .t-toast.success i { color: var(--success); }
+    .t-toast.danger  i { color: var(--danger); }
+    .t-toast.warning i { color: var(--warning); }
+    .t-toast.info    i { color: var(--info); }
+    .t-toast p { margin: 0; font-size: 14px; font-weight: 500; color: var(--text); }
+
+    @keyframes slideUp { from { opacity:0; transform: translateY(12px); } to { opacity:1; transform: none; } }
+
+    /* ── MODAL ───────────────────────────────────────────── */
+    .modal-content {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 10px; color: var(--text);
+    }
+    .modal-header { border-color: var(--border); }
+    .modal-footer { border-color: var(--border); }
+    .modal-title  { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 800; }
+    .btn-close    { filter: invert(1) opacity(.6); }
+    .btn-close:hover { filter: invert(1) opacity(1); }
+
+    /* ── CHART BARS ──────────────────────────────────────── */
+    .h-chart { display: flex; flex-direction: column; gap: 12px; }
+    .h-chart-row { display: flex; align-items: center; gap: 12px; }
+    .h-chart-label { font-size: 12px; color: var(--muted); width: 100px; text-align: right; flex-shrink: 0; }
+    .h-chart-track { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+    .h-chart-fill  { height: 100%; border-radius: 4px; transition: width .6s ease; }
+    .h-chart-val   { font-size: 12px; font-weight: 700; color: var(--text); width: 30px; }
+
+    /* ── RECENT TABLE ────────────────────────────────────── */
+    .recent-item {
+      display: flex; align-items: center; gap: 12px;
+      padding: 10px 0; border-bottom: 1px solid var(--border);
+    }
+    .recent-item:last-child { border-bottom: none; }
+    .prod-icon {
+      width: 36px; height: 36px; border-radius: 8px;
+      background: var(--surface); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; flex-shrink: 0;
+    }
+
+    @media (max-width: 992px) {
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .sidebar { transform: translateX(-100%); }
+      .sidebar.open { transform: translateX(0); }
+      .topbar { left: 0; }
+      .main   { margin-left: 0; }
+      .stat-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-  <div class="container">
-    <a class="navbar-brand" href="/mobil">
-      <i class="bi bi-car-front-fill text-warning me-2"></i>Garasi Motuba
+<!-- ══ SIDEBAR ══════════════════════════════════════════════ -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-brand">
+    <div class="brand-badge"><i class="bi bi-shop"></i> TokoKu</div>
+    <div class="brand-sub">Manajemen Produk</div>
+  </div>
+
+  <nav class="sidebar-nav">
+    <div class="nav-section-label">Menu</div>
+    <a class="s-nav-link active" onclick="nav('dashboard')" id="snav-dashboard">
+      <i class="bi bi-grid-fill"></i> Dashboard
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/mobil"><i class="bi bi-car-front me-1"></i>Data Mobil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/mobil/create"><i class="bi bi-plus-circle me-1"></i>Tambah Mobil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/penjual"><i class="bi bi-people me-1"></i>Data Penjual</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/penjual/create"><i class="bi bi-person-plus me-1"></i>Tambah Penjual</a>
-        </li>
-      </ul>
+
+    <div class="nav-section-label">Produk</div>
+    <a class="s-nav-link" onclick="nav('tambah')" id="snav-tambah">
+      <i class="bi bi-plus-square-fill"></i> Tambah Produk
+    </a>
+    <a class="s-nav-link" onclick="nav('data')" id="snav-data">
+      <i class="bi bi-table"></i> Data Produk
+    </a>
+
+    <div class="nav-section-label">Analisis</div>
+    <a class="s-nav-link" onclick="nav('laporan')" id="snav-laporan">
+      <i class="bi bi-bar-chart-line-fill"></i> Laporan Stok
+    </a>
+  </nav>
+
+  <div class="sidebar-bottom">
+    <div class="stock-summary">
+      <p>Total Produk</p>
+      <span id="sb-total">0</span>
     </div>
   </div>
-</nav>
+</aside>
 
-<!-- Konten halaman -->
-<div class="container pb-5">
-  <!-- Flash message -->
-  <?php if (session()->getFlashdata('success')): ?>
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-      <i class="bi bi-check-circle me-2"></i><?= session()->getFlashdata('success') ?>
-      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+<!-- ══ TOPBAR ════════════════════════════════════════════════ -->
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="btn btn-ghost btn-sm d-lg-none" onclick="$('#sidebar').toggleClass('open')">
+      <i class="bi bi-list fs-5"></i>
+    </button>
+    <div class="page-crumb">TokoKu / <span id="crumb-title">Dashboard</span></div>
+  </div>
+  <div class="topbar-right">
+    <div class="topbar-clock" id="clock">00:00:00</div>
+    <button class="btn btn-ghost btn-sm" onclick="nav('tambah')">
+      <i class="bi bi-plus-lg me-1"></i>Tambah
+    </button>
+  </div>
+</header>
+
+<!-- ══ MAIN ══════════════════════════════════════════════════ -->
+<main class="main">
+
+  <!-- ── HALAMAN 1: DASHBOARD ──────────────────────────── -->
+  <section class="page-sec active" id="page-dashboard">
+    <div class="pg-header">
+      <div>
+        <h2>Dashboard</h2>
+        <p>Ringkasan data produk dan stok toko</p>
+      </div>
+      <button class="btn btn-accent" onclick="nav('tambah')">
+        <i class="bi bi-plus-lg me-1"></i>Produk Baru
+      </button>
     </div>
-  <?php endif; ?>
 
-  <?= $this->renderSection('content') ?>
+    <!-- Stat Cards -->
+    <div class="stat-grid" id="stat-grid">
+      <div class="stat-box">
+        <div class="stat-box-top">
+          <div class="stat-box-icon yellow"><i class="bi bi-box-seam-fill"></i></div>
+          <span class="stat-box-trend up" id="trend-total">↑ Live</span>
+        </div>
+        <div class="stat-num" id="st-total">0</div>
+        <div class="stat-lbl">Total Produk</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-box-top">
+          <div class="stat-box-icon green"><i class="bi bi-check-circle-fill"></i></div>
+          <span class="stat-box-trend up">Aktif</span>
+        </div>
+        <div class="stat-num" id="st-stok">0</div>
+        <div class="stat-lbl">Produk Tersedia</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-box-top">
+          <div class="stat-box-icon orange"><i class="bi bi-exclamation-triangle-fill"></i></div>
+          <span class="stat-box-trend down">Perhatian</span>
+        </div>
+        <div class="stat-num" id="st-low">0</div>
+        <div class="stat-lbl">Stok Menipis (&lt;5)</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-box-top">
+          <div class="stat-box-icon blue"><i class="bi bi-currency-dollar"></i></div>
+        </div>
+        <div class="stat-num" id="st-nilai">Rp0</div>
+        <div class="stat-lbl">Total Nilai Stok</div>
+      </div>
+    </div>
+
+    <div class="row g-3">
+      <!-- Produk Terbaru -->
+      <div class="col-lg-7">
+        <div class="panel">
+          <div class="panel-head">
+            <h5><i class="bi bi-clock-history me-2" style="color:var(--accent)"></i>Produk Terbaru</h5>
+            <button class="btn btn-ghost btn-sm" onclick="nav('data')">Lihat Semua →</button>
+          </div>
+          <div class="panel-body p-0 px-3" id="recent-list">
+            <p class="text-center py-4" style="color:var(--muted)">Belum ada data</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Distribusi Kategori -->
+      <div class="col-lg-5">
+        <div class="panel h-100">
+          <div class="panel-head">
+            <h5><i class="bi bi-pie-chart-fill me-2" style="color:var(--accent2)"></i>Per Kategori</h5>
+          </div>
+          <div class="panel-body" id="dash-kategori">
+            <p style="color:var(--muted);font-size:13px">Belum ada data</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HALAMAN 2: FORM TAMBAH / EDIT ─────────────────── -->
+  <section class="page-sec" id="page-tambah">
+    <div class="pg-header">
+      <div>
+        <h2 id="form-title">Tambah Produk</h2>
+        <p id="form-sub">Isi detail produk yang ingin ditambahkan</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-xl-9">
+        <div class="panel">
+          <div class="panel-head">
+            <h5 id="form-card-h"><i class="bi bi-plus-square me-2" style="color:var(--accent)"></i>Form Data Produk</h5>
+          </div>
+          <div class="panel-body">
+            <form id="produkForm" novalidate>
+              <input type="hidden" id="editId"/>
+              <div class="row g-3">
+
+                <!-- Kode Produk -->
+                <div class="col-md-4">
+                  <label class="form-label">Kode Produk <span class="req">*</span></label>
+                  <input type="text" class="form-control" id="kode" placeholder="Contoh: PRD-001" maxlength="20" required/>
+                  <div class="invalid-feedback">Kode produk wajib diisi</div>
+                </div>
+
+                <!-- Nama Produk -->
+                <div class="col-md-8">
+                  <label class="form-label">Nama Produk <span class="req">*</span></label>
+                  <input type="text" class="form-control" id="nama" placeholder="Nama lengkap produk" required/>
+                  <div class="invalid-feedback">Nama produk wajib diisi</div>
+                </div>
+
+                <!-- Kategori -->
+                <div class="col-md-4">
+                  <label class="form-label">Kategori <span class="req">*</span></label>
+                  <select class="form-select" id="kategori" required>
+                    <option value="">-- Pilih Kategori --</option>
+                    <option>Elektronik</option>
+                    <option>Pakaian</option>
+                    <option>Makanan & Minuman</option>
+                    <option>Peralatan Rumah</option>
+                    <option>Kesehatan & Kecantikan</option>
+                    <option>Olahraga</option>
+                    <option>Lainnya</option>
+                  </select>
+                  <div class="invalid-feedback">Kategori wajib dipilih</div>
+                </div>
+
+                <!-- Harga Beli -->
+                <div class="col-md-4">
+                  <label class="form-label">Harga Beli (Rp) <span class="req">*</span></label>
+                  <input type="number" class="form-control" id="hargaBeli" placeholder="0" min="0" required/>
+                  <div class="invalid-feedback">Harga beli wajib diisi</div>
+                </div>
+
+                <!-- Harga Jual -->
+                <div class="col-md-4">
+                  <label class="form-label">Harga Jual (Rp) <span class="req">*</span></label>
+                  <input type="number" class="form-control" id="hargaJual" placeholder="0" min="0" required/>
+                  <div class="invalid-feedback">Harga jual wajib diisi</div>
+                </div>
+
+                <!-- Stok -->
+                <div class="col-md-4">
+                  <label class="form-label">Jumlah Stok <span class="req">*</span></label>
+                  <input type="number" class="form-control" id="stok" placeholder="0" min="0" required/>
+                  <div class="invalid-feedback">Stok wajib diisi</div>
+                </div>
+
+                <!-- Satuan -->
+                <div class="col-md-4">
+                  <label class="form-label">Satuan <span class="req">*</span></label>
+                  <select class="form-select" id="satuan" required>
+                    <option value="">-- Pilih Satuan --</option>
+                    <option>Pcs</option><option>Unit</option><option>Kg</option>
+                    <option>Gram</option><option>Liter</option><option>Ml</option>
+                    <option>Lusin</option><option>Kotak</option><option>Dus</option>
+                  </select>
+                  <div class="invalid-feedback">Satuan wajib dipilih</div>
+                </div>
+
+                <!-- Supplier -->
+                <div class="col-md-4">
+                  <label class="form-label">Supplier</label>
+                  <input type="text" class="form-control" id="supplier" placeholder="Nama supplier"/>
+                </div>
+
+                <!-- Deskripsi -->
+                <div class="col-12">
+                  <label class="form-label">Deskripsi Produk</label>
+                  <textarea class="form-control" id="deskripsi" rows="3" placeholder="Deskripsi singkat produk..."></textarea>
+                </div>
+
+                <!-- Margin indicator -->
+                <div class="col-12" id="margin-info" style="display:none">
+                  <div style="background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:12px 16px;font-size:13px;color:var(--muted)">
+                    <i class="bi bi-graph-up me-2" style="color:var(--accent)"></i>
+                    Margin Keuntungan: <strong id="margin-val" style="color:var(--accent)">-</strong>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="d-flex gap-2 mt-4 pt-3" style="border-top:1px solid var(--border)">
+                <button type="submit" class="btn btn-accent px-4" id="submitBtn">
+                  <i class="bi bi-check-lg me-1"></i><span id="submitTxt">Simpan Produk</span>
+                </button>
+                <button type="button" class="btn btn-ghost px-4" onclick="resetForm()">
+                  <i class="bi bi-arrow-counterclockwise me-1"></i>Reset
+                </button>
+                <button type="button" class="btn btn-ghost ms-auto" onclick="nav('data')">
+                  ← Kembali
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HALAMAN 3: DATA PRODUK (TABEL) ────────────────── -->
+  <section class="page-sec" id="page-data">
+    <div class="pg-header">
+      <div>
+        <h2>Data Produk</h2>
+        <p>Kelola semua produk yang terdaftar di toko</p>
+      </div>
+      <div class="d-flex gap-2">
+        <button class="btn btn-ghost btn-sm" onclick="exportJSON()">
+          <i class="bi bi-download me-1"></i>Export JSON
+        </button>
+        <button class="btn btn-accent" onclick="nav('tambah'); setFormMode('add')">
+          <i class="bi bi-plus-lg me-1"></i>Tambah Produk
+        </button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <h5><i class="bi bi-table me-2" style="color:var(--accent)"></i>Tabel Produk</h5>
+        <span id="tbl-count" style="font-size:12px;color:var(--muted)">0 produk</span>
+      </div>
+      <div class="panel-body">
+        <div class="table-responsive">
+          <table id="tblProduk" class="table w-100">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Kode</th>
+                <th>Nama Produk</th>
+                <th>Kategori</th>
+                <th>Harga Jual</th>
+                <th>Stok</th>
+                <th>Nilai Stok</th>
+                <th style="min-width:120px">Aksi</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HALAMAN 4: LAPORAN STOK ────────────────────────── -->
+  <section class="page-sec" id="page-laporan">
+    <div class="pg-header">
+      <div>
+        <h2>Laporan Stok</h2>
+        <p>Analisis stok dan distribusi produk</p>
+      </div>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="panel">
+          <div class="panel-head"><h5><i class="bi bi-bar-chart-fill me-2" style="color:var(--accent)"></i>Stok per Kategori</h5></div>
+          <div class="panel-body" id="chart-kategori"></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="panel">
+          <div class="panel-head"><h5><i class="bi bi-exclamation-triangle-fill me-2" style="color:var(--warning)"></i>Produk Stok Menipis</h5></div>
+          <div class="panel-body p-0" id="list-low-stok"></div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="panel">
+          <div class="panel-head"><h5><i class="bi bi-trophy-fill me-2" style="color:var(--accent2)"></i>Top 5 Nilai Stok Tertinggi</h5></div>
+          <div class="panel-body" id="chart-nilai"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══ MODAL DETAIL ══════════════════════════════════════════ -->
+<div class="modal fade" id="detailModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><i class="bi bi-box-seam me-2"></i>Detail Produk</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" id="detail-body"></div>
+      <div class="modal-footer">
+        <button class="btn btn-ghost btn-sm" data-bs-dismiss="modal">Tutup</button>
+        <button class="btn btn-accent btn-sm" id="detail-edit-btn">Edit Produk</button>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- jQuery (WAJIB sebelum DataTables) -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
-<!-- Bootstrap 5 JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- DataTables + Bootstrap 5 -->
-<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
-<!-- jQuery Validate Plugin (jQuery plugin wajib) -->
-<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<!-- ══ MODAL HAPUS ════════════════════════════════════════════ -->
+<div class="modal fade" id="hapusModal" tabindex="-1">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="color:var(--danger)"><i class="bi bi-trash3 me-2"></i>Hapus Produk</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Hapus produk <strong id="hapus-nama"></strong>?</p>
+        <small style="color:var(--muted)">Data tidak dapat dikembalikan.</small>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-ghost btn-sm" data-bs-dismiss="modal">Batal</button>
+        <button class="btn btn-danger-ghost btn-sm" id="konfirmHapus">Hapus</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-<?= $this->renderSection('scripts') ?>
+<!-- Toast container -->
+<div class="toast-wrap" id="toastWrap"></div>
+
+<!-- ══ SCRIPTS ════════════════════════════════════════════════ -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/datatables.net@1.13.8/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/datatables.net-bs5@1.13.8/js/dataTables.bootstrap5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.20.0/dist/jquery.validate.min.js"></script>
+
+<script>
+/* ═══════════════════════════════════════════════════════════
+   DATABASE — localStorage JSON
+═══════════════════════════════════════════════════════════ */
+const KEY = 'tokoku_produk';
+
+const db = {
+  load: () => { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch { return []; } },
+  save: (d) => localStorage.setItem(KEY, JSON.stringify(d)),
+  genId: () => 'p_' + Date.now() + '_' + Math.random().toString(36).slice(2,6),
+};
+
+// Seed data awal
+(function () {
+  if (db.load().length > 0) return;
+  db.save([
+    { id: db.genId(), kode:'PRD-001', nama:'Laptop ASUS VivoBook 15', kategori:'Elektronik', hargaBeli:7500000, hargaJual:9500000, stok:12, satuan:'Unit', supplier:'PT. ASUS Indonesia', deskripsi:'Laptop 15.6 inch, Intel Core i5, RAM 8GB', createdAt: new Date().toISOString() },
+    { id: db.genId(), kode:'PRD-002', nama:'Kaos Polos Premium', kategori:'Pakaian', hargaBeli:35000, hargaJual:75000, stok:150, satuan:'Pcs', supplier:'CV. Textile Jaya', deskripsi:'Kaos cotton combed 30s, berbagai warna', createdAt: new Date().toISOString() },
+    { id: db.genId(), kode:'PRD-003', nama:'Mie Instan Goreng', kategori:'Makanan & Minuman', hargaBeli:2800, hargaJual:4000, stok:3, satuan:'Pcs', supplier:'PT. Indofood', deskripsi:'Mie instan rasa ayam goreng', createdAt: new Date().toISOString() },
+    { id: db.genId(), kode:'PRD-004', nama:'Headset Gaming RGB', kategori:'Elektronik', hargaBeli:180000, hargaJual:299000, stok:25, satuan:'Pcs', supplier:'CV. Gaming Store', deskripsi:'Headset 7.1 surround, mikrofon noise cancelling', createdAt: new Date().toISOString() },
+    { id: db.genId(), kode:'PRD-005', nama:'Sabun Mandi Cair 500ml', kategori:'Kesehatan & Kecantikan', hargaBeli:18000, hargaJual:28000, stok:4, satuan:'Pcs', supplier:'PT. Unilever', deskripsi:'Sabun cair antibakteri', createdAt: new Date().toISOString() },
+    { id: db.genId(), kode:'PRD-006', nama:'Sepatu Lari Nike Air', kategori:'Olahraga', hargaBeli:450000, hargaJual:750000, stok:8, satuan:'Pcs', supplier:'PT. Nike Indonesia', deskripsi:'Sepatu lari ringan dan nyaman', createdAt: new Date().toISOString() },
+  ]);
+})();
+
+/* ═══════════════════════════════════════════════════════════
+   NAVIGATION
+═══════════════════════════════════════════════════════════ */
+const titles = { dashboard:'Dashboard', tambah:'Tambah Produk', data:'Data Produk', laporan:'Laporan Stok' };
+
+function nav(page) {
+  $('.page-sec').removeClass('active');
+  $('#page-' + page).addClass('active');
+  $('.s-nav-link').removeClass('active');
+  $('#snav-' + page).addClass('active');
+  $('#crumb-title').text(titles[page] || page);
+  $('#sidebar').removeClass('open');
+  if (page === 'dashboard') renderDashboard();
+  if (page === 'data')      renderTable();
+  if (page === 'laporan')   renderLaporan();
+  if (page === 'tambah' && !$('#editId').val()) setFormMode('add');
+  window.scrollTo(0,0);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   CLOCK
+═══════════════════════════════════════════════════════════ */
+setInterval(() => {
+  const n = new Date();
+  $('#clock').text([n.getHours(),n.getMinutes(),n.getSeconds()].map(x=>String(x).padStart(2,'0')).join(':'));
+}, 1000);
+
+/* ═══════════════════════════════════════════════════════════
+   TOAST
+═══════════════════════════════════════════════════════════ */
+const icoMap = { success:'check-circle-fill', danger:'x-circle-fill', warning:'exclamation-triangle-fill', info:'info-circle-fill' };
+function toast(msg, type='success') {
+  const id = 'tt_' + Date.now();
+  const el = $(`<div id="${id}" class="t-toast ${type}">
+    <i class="bi bi-${icoMap[type]}"></i>
+    <p>${msg}</p>
+  </div>`);
+  $('#toastWrap').append(el);
+  setTimeout(() => el.fadeOut(300, () => el.remove()), 3000);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   HELPERS
+═══════════════════════════════════════════════════════════ */
+const rp = (n) => 'Rp' + Number(n).toLocaleString('id-ID');
+
+function katBadge(k) {
+  const m = { 'Elektronik':'kat-elektronik', 'Pakaian':'kat-pakaian', 'Makanan & Minuman':'kat-makanan' };
+  return `<span class="kat-badge ${m[k]||'kat-lainnya'}">${k}</span>`;
+}
+
+function stokBadge(s) {
+  if (s === 0) return `<span class="stok-badge empty"><i class="bi bi-x-circle-fill"></i> Habis</span>`;
+  if (s < 5)  return `<span class="stok-badge low"><i class="bi bi-exclamation-triangle-fill"></i> ${s}</span>`;
+  return `<span class="stok-badge ok"><i class="bi bi-check-circle-fill"></i> ${s}</span>`;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   DASHBOARD
+═══════════════════════════════════════════════════════════ */
+function renderDashboard() {
+  const data = db.load();
+  const total     = data.length;
+  const tersedia  = data.filter(p => p.stok > 0).length;
+  const menipis   = data.filter(p => p.stok > 0 && p.stok < 5).length;
+  const nilaiStok = data.reduce((a,p) => a + (p.hargaJual * p.stok), 0);
+
+  $('#st-total').text(total);
+  $('#st-stok').text(tersedia);
+  $('#st-low').text(menipis);
+  $('#st-nilai').text(nilaiStok >= 1e6 ? 'Rp' + (nilaiStok/1e6).toFixed(1) + 'jt' : rp(nilaiStok));
+  $('#sb-total').text(total);
+
+  // Recent 5
+  const recent = [...data].reverse().slice(0,5);
+  const rl = $('#recent-list').empty();
+  if (!recent.length) { rl.html('<p class="py-4 text-center" style="color:var(--muted)">Belum ada produk</p>'); return; }
+  recent.forEach(p => {
+    const emo = { 'Elektronik':'💻', 'Pakaian':'👕', 'Makanan & Minuman':'🍜', 'Olahraga':'⚽', 'Kesehatan & Kecantikan':'💄' };
+    rl.append(`<div class="recent-item">
+      <div class="prod-icon">${emo[p.kategori]||'📦'}</div>
+      <div class="flex-grow-1">
+        <div style="font-weight:600;font-size:14px">${p.nama}</div>
+        <div style="font-size:12px;color:var(--muted)">${p.kode} · ${katBadge(p.kategori)}</div>
+      </div>
+      <div class="text-end">
+        <div style="font-weight:700;font-size:14px;color:var(--accent)">${rp(p.hargaJual)}</div>
+        <div style="font-size:12px">${stokBadge(p.stok)}</div>
+      </div>
+    </div>`);
+  });
+
+  // Kategori chart
+  const katCount = {};
+  data.forEach(p => { katCount[p.kategori] = (katCount[p.kategori]||0) + 1; });
+  const maxK = Math.max(...Object.values(katCount), 1);
+  const colors = ['#e8ff47','#ff6b35','#60a5fa','#4ade80','#f472b6','#a78bfa','#fbbf24'];
+  let html = '<div class="h-chart">';
+  Object.entries(katCount).forEach(([k,v],i) => {
+    html += `<div class="h-chart-row">
+      <div class="h-chart-label">${k.length>12?k.slice(0,12)+'…':k}</div>
+      <div class="h-chart-track"><div class="h-chart-fill" style="width:${Math.round(v/maxK*100)}%;background:${colors[i%colors.length]}"></div></div>
+      <div class="h-chart-val">${v}</div>
+    </div>`;
+  });
+  html += '</div>';
+  $('#dash-kategori').html(html || '<p style="color:var(--muted)">Belum ada data</p>');
+}
+
+/* ═══════════════════════════════════════════════════════════
+   DATATABLE
+═══════════════════════════════════════════════════════════ */
+let dtInst = null;
+
+function renderTable() {
+  if (typeof $.fn.DataTable === 'undefined') {
+    $('#tblProduk tbody').html('<tr><td colspan="8" class="text-center" style="color:var(--danger);padding:20px">Gagal load DataTables. Periksa koneksi.</td></tr>');
+    return;
+  }
+
+  const raw = db.load();
+  $('#tbl-count').text(raw.length + ' produk');
+
+  // Format JSON untuk DataTables
+  const jsonData = raw.map((p, i) => ({
+    no:       i + 1,
+    id:       p.id,
+    kode:     p.kode,
+    nama:     p.nama,
+    kategori: p.kategori,
+    hargaJual: p.hargaJual,
+    stok:     p.stok,
+    satuan:   p.satuan,
+    nilaiStok: p.hargaJual * p.stok,
+  }));
+
+  if (dtInst) { dtInst.destroy(); $('#tblProduk tbody').empty(); }
+
+  dtInst = $('#tblProduk').DataTable({
+    data: jsonData,   // ← Data format JSON
+    columns: [
+      { data: 'no', width: '40px' },
+      { data: 'kode', render: d => `<code style="color:var(--accent);font-size:12px">${d}</code>` },
+      { data: 'nama', render: d => `<span style="font-weight:600">${d}</span>` },
+      { data: 'kategori', render: katBadge },
+      { data: 'hargaJual', render: d => `<span style="color:var(--accent);font-weight:700">${rp(d)}</span>` },
+      { data: 'stok', render: (s, _, row) => `${stokBadge(s)} <span style="color:var(--muted);font-size:11px">${row.satuan}</span>` },
+      { data: 'nilaiStok', render: d => `<span style="font-size:13px">${rp(d)}</span>` },
+      {
+        data: 'id', orderable: false,
+        render: (id, _, row) => `
+          <div class="d-flex gap-1">
+            <button class="btn btn-ghost btn-sm" onclick="showDetail('${id}')" title="Detail"><i class="bi bi-eye"></i></button>
+            <button class="btn btn-ghost btn-sm" onclick="editProduk('${id}')" title="Edit"><i class="bi bi-pencil" style="color:var(--accent)"></i></button>
+            <button class="btn btn-danger-ghost btn-sm" onclick="promptHapus('${id}','${row.nama.replace(/'/g,"\\'")}')"><i class="bi bi-trash3"></i></button>
+          </div>`
+      }
+    ],
+    language: {
+      search: 'Cari:',
+      lengthMenu: 'Tampil _MENU_ data',
+      info: 'Data _START_–_END_ dari _TOTAL_',
+      infoEmpty: 'Tidak ada data',
+      zeroRecords: 'Produk tidak ditemukan',
+      paginate: { previous: '‹', next: '›' },
+    },
+    pageLength: 10,
+    order: [[0,'asc']],
+  });
+}
+
+/* ═══════════════════════════════════════════════════════════
+   CRUD — CREATE / UPDATE
+═══════════════════════════════════════════════════════════ */
+function setFormMode(mode) {
+  if (mode === 'add') {
+    $('#editId').val('');
+    $('#form-title').text('Tambah Produk');
+    $('#form-sub').text('Isi detail produk yang ingin ditambahkan');
+    $('#form-card-h').html('<i class="bi bi-plus-square me-2" style="color:var(--accent)"></i>Form Data Produk');
+    $('#submitTxt').text('Simpan Produk');
+    resetForm();
+  }
+}
+
+function resetForm() {
+  $('#produkForm')[0].reset();
+  $('#produkForm').removeClass('was-validated');
+  $('#editId').val('');
+  $('#margin-info').hide();
+}
+
+// Hitung margin otomatis
+$('#hargaBeli, #hargaJual').on('input', function() {
+  const beli = parseFloat($('#hargaBeli').val()) || 0;
+  const jual = parseFloat($('#hargaJual').val()) || 0;
+  if (beli > 0 && jual > 0) {
+    const margin = ((jual - beli) / beli * 100).toFixed(1);
+    const profit = jual - beli;
+    const color = profit >= 0 ? 'var(--success)' : 'var(--danger)';
+    $('#margin-val').html(`<span style="color:${color}">${margin}% (${rp(profit)})</span>`);
+    $('#margin-info').show();
+  } else {
+    $('#margin-info').hide();
+  }
+});
+
+// jQuery Validate
+$(function() {
+  $('#produkForm').validate({
+    rules: {
+      kode:      { required: true, maxlength: 20 },
+      nama:      { required: true },
+      kategori:  { required: true },
+      hargaBeli: { required: true, min: 0 },
+      hargaJual: { required: true, min: 0 },
+      stok:      { required: true, min: 0 },
+      satuan:    { required: true },
+    },
+    messages: {
+      kode:      { required: 'Kode produk wajib diisi' },
+      nama:      { required: 'Nama produk wajib diisi' },
+      kategori:  { required: 'Kategori wajib dipilih' },
+      hargaBeli: { required: 'Harga beli wajib diisi', min: 'Tidak boleh negatif' },
+      hargaJual: { required: 'Harga jual wajib diisi', min: 'Tidak boleh negatif' },
+      stok:      { required: 'Stok wajib diisi', min: 'Tidak boleh negatif' },
+      satuan:    { required: 'Satuan wajib dipilih' },
+    },
+    errorClass: 'is-invalid',
+    validClass: 'is-valid',
+    errorElement: 'div',
+    errorPlacement(error, el) { error.addClass('invalid-feedback'); el.after(error); },
+    highlight(el)   { $(el).addClass('is-invalid').removeClass('is-valid'); },
+    unhighlight(el) { $(el).removeClass('is-invalid').addClass('is-valid'); },
+    submitHandler() {
+      const id  = $('#editId').val();
+      const obj = {
+        kode:      $('#kode').val().trim(),
+        nama:      $('#nama').val().trim(),
+        kategori:  $('#kategori').val(),
+        hargaBeli: parseInt($('#hargaBeli').val()) || 0,
+        hargaJual: parseInt($('#hargaJual').val()) || 0,
+        stok:      parseInt($('#stok').val()) || 0,
+        satuan:    $('#satuan').val(),
+        supplier:  $('#supplier').val().trim(),
+        deskripsi: $('#deskripsi').val().trim(),
+      };
+
+      let data = db.load();
+      if (id) {
+        // UPDATE
+        const idx = data.findIndex(p => p.id === id);
+        if (idx !== -1) { data[idx] = { ...data[idx], ...obj, updatedAt: new Date().toISOString() }; }
+        db.save(data);
+        toast(`Produk <strong>${obj.nama}</strong> diperbarui!`);
+      } else {
+        // CREATE - cek duplikat kode
+        if (data.find(p => p.kode === obj.kode)) {
+          toast('Kode produk sudah ada! Gunakan kode lain.', 'danger');
+          return;
+        }
+        obj.id = db.genId();
+        obj.createdAt = new Date().toISOString();
+        data.push(obj);
+        db.save(data);
+        toast(`Produk <strong>${obj.nama}</strong> berhasil ditambahkan!`);
+      }
+      resetForm();
+      nav('data');
+    }
+  });
+});
+
+/* ═══════════════════════════════════════════════════════════
+   CRUD — READ (Detail)
+═══════════════════════════════════════════════════════════ */
+function showDetail(id) {
+  const p = db.load().find(d => d.id === id);
+  if (!p) return;
+  const margin = p.hargaBeli > 0 ? ((p.hargaJual-p.hargaBeli)/p.hargaBeli*100).toFixed(1) : '-';
+  const emo = {'Elektronik':'💻','Pakaian':'👕','Makanan & Minuman':'🍜','Olahraga':'⚽','Kesehatan & Kecantikan':'💄'};
+  $('#detail-body').html(`
+    <div class="text-center mb-3" style="padding:16px 0;border-bottom:1px solid var(--border)">
+      <div style="font-size:48px">${emo[p.kategori]||'📦'}</div>
+      <h5 style="font-family:Syne,sans-serif;font-weight:800;margin:8px 0 4px">${p.nama}</h5>
+      <code style="color:var(--accent);font-size:13px">${p.kode}</code>
+      <div class="mt-2">${katBadge(p.kategori)}</div>
+    </div>
+    <table class="table table-sm" style="font-size:14px">
+      <tr><td style="color:var(--muted);width:140px">Harga Beli</td><td><strong>${rp(p.hargaBeli)}</strong></td></tr>
+      <tr><td style="color:var(--muted)">Harga Jual</td><td><strong style="color:var(--accent)">${rp(p.hargaJual)}</strong></td></tr>
+      <tr><td style="color:var(--muted)">Margin</td><td><strong style="color:var(--success)">${margin}%</strong></td></tr>
+      <tr><td style="color:var(--muted)">Stok</td><td>${stokBadge(p.stok)} ${p.satuan}</td></tr>
+      <tr><td style="color:var(--muted)">Nilai Stok</td><td><strong>${rp(p.hargaJual * p.stok)}</strong></td></tr>
+      <tr><td style="color:var(--muted)">Supplier</td><td>${p.supplier || '-'}</td></tr>
+      <tr><td style="color:var(--muted)">Deskripsi</td><td>${p.deskripsi || '-'}</td></tr>
+    </table>
+  `);
+  $('#detail-edit-btn').off('click').on('click', () => { bootstrap.Modal.getInstance('#detailModal').hide(); editProduk(id); });
+  new bootstrap.Modal('#detailModal').show();
+}
+
+/* ═══════════════════════════════════════════════════════════
+   CRUD — UPDATE (Fill form)
+═══════════════════════════════════════════════════════════ */
+function editProduk(id) {
+  const p = db.load().find(d => d.id === id);
+  if (!p) return;
+  nav('tambah');
+  $('#editId').val(p.id);
+  $('#kode').val(p.kode);
+  $('#nama').val(p.nama);
+  $('#kategori').val(p.kategori);
+  $('#hargaBeli').val(p.hargaBeli);
+  $('#hargaJual').val(p.hargaJual);
+  $('#stok').val(p.stok);
+  $('#satuan').val(p.satuan);
+  $('#supplier').val(p.supplier);
+  $('#deskripsi').val(p.deskripsi);
+  $('#hargaBeli').trigger('input');
+  $('#form-title').text('Edit Produk');
+  $('#form-sub').text('Mengubah data: ' + p.nama);
+  $('#form-card-h').html('<i class="bi bi-pencil-square me-2" style="color:var(--warning)"></i>Edit Data Produk');
+  $('#submitTxt').text('Perbarui Produk');
+  $('#produkForm').removeClass('was-validated');
+}
+
+/* ═══════════════════════════════════════════════════════════
+   CRUD — DELETE
+═══════════════════════════════════════════════════════════ */
+let pendingId = null;
+
+function promptHapus(id, nama) {
+  pendingId = id;
+  $('#hapus-nama').text(nama);
+  new bootstrap.Modal('#hapusModal').show();
+}
+
+$('#konfirmHapus').on('click', function() {
+  if (!pendingId) return;
+  let data = db.load();
+  const p = data.find(d => d.id === pendingId);
+  db.save(data.filter(d => d.id !== pendingId));
+  toast(`Produk <strong>${p?.nama}</strong> dihapus.`, 'warning');
+  bootstrap.Modal.getInstance('#hapusModal').hide();
+  pendingId = null;
+  renderTable();
+  renderDashboard();
+});
+
+/* ═══════════════════════════════════════════════════════════
+   LAPORAN
+═══════════════════════════════════════════════════════════ */
+function renderLaporan() {
+  const data = db.load();
+
+  // Stok per kategori
+  const katStok = {};
+  data.forEach(p => { katStok[p.kategori] = (katStok[p.kategori]||0) + p.stok; });
+  const maxKS = Math.max(...Object.values(katStok), 1);
+  const colors = ['#e8ff47','#ff6b35','#60a5fa','#4ade80','#f472b6','#a78bfa','#fbbf24'];
+  let h1 = '<div class="h-chart">';
+  Object.entries(katStok).forEach(([k,v],i) => {
+    h1 += `<div class="h-chart-row">
+      <div class="h-chart-label">${k.length>12?k.slice(0,12)+'…':k}</div>
+      <div class="h-chart-track"><div class="h-chart-fill" style="width:${Math.round(v/maxKS*100)}%;background:${colors[i%colors.length]}"></div></div>
+      <div class="h-chart-val">${v}</div>
+    </div>`;
+  });
+  h1 += '</div>';
+  $('#chart-kategori').html(h1 || '<p style="color:var(--muted)">Belum ada data</p>');
+
+  // Produk stok menipis
+  const lowList = data.filter(p => p.stok < 5).sort((a,b) => a.stok - b.stok);
+  if (!lowList.length) {
+    $('#list-low-stok').html('<p class="text-center py-4" style="color:var(--success);font-size:13px"><i class="bi bi-check-circle-fill me-2"></i>Semua stok aman!</p>');
+  } else {
+    let h2 = '';
+    lowList.forEach(p => {
+      h2 += `<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:1px solid var(--border)">
+        <div>
+          <div style="font-weight:600;font-size:14px">${p.nama}</div>
+          <code style="font-size:11px;color:var(--accent)">${p.kode}</code>
+        </div>
+        <div style="text-align:right">
+          ${stokBadge(p.stok)}
+          <div style="font-size:11px;color:var(--muted);margin-top:2px">${p.satuan}</div>
+        </div>
+      </div>`;
+    });
+    $('#list-low-stok').html(h2);
+  }
+
+  // Top 5 nilai stok
+  const top5 = [...data].sort((a,b) => (b.hargaJual*b.stok)-(a.hargaJual*a.stok)).slice(0,5);
+  const maxN = top5[0] ? top5[0].hargaJual * top5[0].stok : 1;
+  let h3 = '<div class="h-chart">';
+  top5.forEach((p,i) => {
+    const val = p.hargaJual * p.stok;
+    h3 += `<div class="h-chart-row">
+      <div class="h-chart-label">${p.nama.length>12?p.nama.slice(0,12)+'…':p.nama}</div>
+      <div class="h-chart-track"><div class="h-chart-fill" style="width:${Math.round(val/maxN*100)}%;background:${colors[i]}"></div></div>
+      <div class="h-chart-val" style="width:80px;font-size:11px">${val>=1e6?(val/1e6).toFixed(1)+'jt':rp(val)}</div>
+    </div>`;
+  });
+  h3 += '</div>';
+  $('#chart-nilai').html(h3 || '<p style="color:var(--muted)">Belum ada data</p>');
+}
+
+/* ═══════════════════════════════════════════════════════════
+   EXPORT JSON
+═══════════════════════════════════════════════════════════ */
+function exportJSON() {
+  const blob = new Blob([JSON.stringify(db.load(), null, 2)], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'data_produk_tokoku.json';
+  a.click();
+  toast('Data berhasil diekspor!', 'info');
+}
+
+/* ═══════════════════════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════════════════════ */
+$(document).ready(() => renderDashboard());
+</script>
 </body>
 </html>
+
 ```
+**Penjelasan**
 
-**Penjelasan `Views/layouts/main.php`**
-
-File main.php merupakan layout utama (template) yang digunakan oleh seluruh halaman pada aplikasi. Layout ini berfungsi sebagai kerangka dasar tampilan sehingga setiap halaman memiliki desain yang konsisten.
-
-Pada bagian <head>, aplikasi menggunakan framework Bootstrap 5 untuk styling, Bootstrap Icons untuk ikon, serta DataTables untuk menampilkan data tabel yang interaktif. Selain itu, terdapat custom CSS untuk memperindah tampilan seperti navbar, card, tombol, dan badge status.
-
-Bagian navbar digunakan sebagai navigasi utama yang berisi menu menuju halaman data mobil, tambah mobil, data penjual, dan tambah penjual. Hal ini memudahkan pengguna dalam berpindah antar halaman.
-
-Pada bagian konten, digunakan <?= $this->renderSection('content') ?> untuk menampilkan isi halaman sesuai view yang dipanggil. Selain itu, terdapat fitur flashdata untuk menampilkan notifikasi sukses setelah melakukan operasi seperti tambah, edit, atau hapus data.
-
-Di bagian bawah, disertakan beberapa library JavaScript seperti:
-
-jQuery sebagai library utama
-Bootstrap JS untuk komponen interaktif
-DataTables untuk tabel dinamis berbasis JSON
-jQuery Validate sebagai plugin validasi form
-
-Penggunaan <?= $this->renderSection('scripts') ?> memungkinkan setiap halaman menambahkan script khusus sesuai kebutuhan.
-
-Dengan adanya layout ini, aplikasi menjadi lebih terstruktur, rapi, dan memenuhi requirement penggunaan Bootstrap serta jQuery plugin dalam pengembangan aplikasi.
+File ini menangani struktur halaman (Single Page Application), dan skrip untuk memanggil API.
 
 ---
 
 ## 6. Alur CRUD Aplikasi
 
-Aplikasi jual beli mobil ini menerapkan konsep CRUD (Create, Read, Update, Delete) pada dua entitas utama yaitu **Mobil** dan **Penjual**. Berikut penjelasan alur dari masing-masing proses:
+Sistem ini menerapkan Single Page Application (SPA) di mana seluruh alur CRUD beroperasi tanpa melakukan reload browser menggunakan metode jQuery AJAX & penyimpanan localStorage / backend API.
 
-### 1. Create (Menambahkan Data)
-
-Proses Create dilakukan ketika pengguna ingin menambahkan data baru.
+### 1. Create (Tambah Produk)
 
 **Alur:**
-1. Pengguna membuka halaman form:
-   - `/mobil/create` untuk data mobil
-   - `/penjual/create` untuk data penjual
-2. Pengguna mengisi form yang tersedia.
-3. Data dikirim menggunakan method POST ke:
-   - `/mobil/store`
-   - `/penjual/store`
-4. Controller (`MobilController` atau `PenjualController`) menerima data dari form menggunakan `$this->request->getPost()`.
-5. Data disimpan ke database melalui model (`MobilModel` atau `PenjualModel`).
-6. Setelah berhasil, sistem menampilkan notifikasi sukses (flashdata) dan redirect ke halaman tabel.
+1. Pengguna membuka navigasi "Tambah Produk".
+2. Pengguna mengisi detail input barang (Nama, Kode, Kategori, Beli, Jual, Stok).
+3. Saat disubmit, jQuery Validation memastikan bahwa input required sudah terisi.
+4. jQuery mengirimkan data baru (men-generate UUID baru) dan menyimpannya. Data array produk dimutakhirkan.
 
 ---
 
-### 2. Read (Menampilkan Data)
-
-Proses Read digunakan untuk menampilkan data dalam bentuk tabel.
+### 2. Read (Menampilkan Produk)
 
 **Alur:**
-1. Pengguna membuka halaman:
-   - `/mobil`
-   - `/penjual`
-2. Halaman view memanggil DataTables (jQuery plugin).
-3. DataTables mengambil data melalui AJAX ke endpoint:
-   - `/mobil/json`
-   - `/penjual/json`
-4. Controller mengambil data dari database melalui model.
-5. Data dikonversi ke format JSON menggunakan `setJSON()`.
-6. Data ditampilkan pada tabel secara dinamis (tanpa reload halaman).
+1. Terdapat Dashboard yang merender grafik kustom (Stok per kategori, top margin nilai).
+2. Terdapat halaman Data Produk di mana JSON dari database langsung ditangkap oleh DataTables.
+3. DataTables merender pagination, menyediakan bar penelusuran (Search), pengurutan, dan memodifikasi badge berdasarkan ketersediaan (Stok Kosong / Low / Tersedia).
 
 ---
 
-### 3. Update (Mengubah Data)
-
-Proses Update digunakan untuk mengedit data yang sudah ada.
+### 3. Update (Mengubah Produk)
 
 **Alur:**
-1. Pengguna menekan tombol edit pada tabel.
-2. Sistem mengarahkan ke halaman:
-   - `/mobil/edit/{id}`
-   - `/penjual/edit/{id}`
-3. Controller mengambil data berdasarkan id dan mengirimkannya ke view.
-4. Form edit ditampilkan dengan data yang sudah terisi.
-5. Setelah diubah, data dikirim ke:
-   - `/mobil/update/{id}`
-   - `/penjual/update/{id}`
-6. Controller memproses perubahan dan menyimpan ke database.
-7. Sistem menampilkan notifikasi sukses dan redirect ke halaman tabel.
+1. Pengguna mengklik tombol Edit di DataTables.
+2. Data berdasarkan id dipanggil dari tabel, form disuntikkan (populate) dengan data yang lama secara otomatis.
+3. Setelah pengguna merubah dan menyimpan, array diperbarui lalu dikembalikan ke dalam file JSON (updatedAt timestamp diubah).
 
 ---
 
-### 4. Delete (Menghapus Data)
-
-Proses Delete digunakan untuk menghapus data.
+### 4. Delete (Menghapus Produk)
 
 **Alur:**
-1. Pengguna menekan tombol hapus pada tabel.
-2. Sistem menampilkan konfirmasi (confirm dialog).
-3. Jika disetujui, request dikirim ke:
-   - `/mobil/delete/{id}`
-   - `/penjual/delete/{id}`
-4. Controller menghapus data dari database melalui model.
-5. Untuk data mobil, jika terdapat file foto, maka file juga akan dihapus dari folder `uploads`.
-6. Sistem menampilkan notifikasi sukses dan kembali ke halaman tabel.
-
----
-
-### Kesimpulan Alur
-
-Secara keseluruhan, alur CRUD pada aplikasi ini berjalan dengan pola:
-- **View → Controller → Model → Database → Response → View**
-
-Aplikasi juga memanfaatkan:
-- **Bootstrap** untuk tampilan
-- **jQuery & DataTables** untuk interaksi dan tabel dinamis
-- **JSON** sebagai format pertukaran data
-
-Dengan demikian, seluruh fitur CRUD telah berjalan dengan baik dan sesuai dengan spesifikasi tugas praktikum.
+1. Pengguna mengklik opsi Trash/Delete.
+2. Modal Prompt bootstrap terbuka meminta konfirmasi pengguna.
+3. Setelah disetujui, array objek di JSON difilter (filter()) untuk menghapus produk dengan ID terkait. DataTables kemudian di-render ulang.
 
 ---
 
 ## 7. Screenshot Website
 
 1. Tampilan Awal Halaman
-![](assets/halamanutama.JPG)
-2. Halaman Tambah Mobil
-![](assets/tambahmobil.JPG)
-3. Halaman Data Penjual
-![](assets/datapenjual.JPG)
-4. Halaman Tambah Penjual
-![](assets/tambahpenjual.JPG)
-5. Hasil Update Data
-![](assets/update.JPG)
-6. Proses Hapus Data
-![](assets/hapus.JPG)
+![](assets/halutama.jpeg)
+2. Halaman Tambah Produk
+![](assets/Formtambah.jpeg)
+3. Halaman Data Produk
+![](assets/Data.jpeg)
+4. Halaman Laporan Stok
+![](assets/laporan.jpeg)
+5. Hasil Update Produk
+![](assets/updateproduk.jpeg)
+![](assets/updateproduk2.jpeg)
+![](assets/updateproduk3.jpeg)
+![](assets/updateproduk4.jpeg)
+6. Proses Hapus Produk
+![](assets/updateproduk3.jpeg)
 Hasil Hapus
-![](assets/hasilhapus.JPG)
+![](assets/hapus.jpeg)
+![](assets/hapus2.jpeg)
 
 ---
 
 ## 8. Kesimpulan
 
-Berdasarkan hasil pembuatan aplikasi web jual beli mobil menggunakan framework CodeIgniter 4, dapat disimpulkan bahwa aplikasi telah berhasil dibangun sesuai dengan spesifikasi tugas yang diberikan.
+Berdasarkan hasil pembuatan aplikasi "TokoKu", disimpulkan bahwa pengelolaan basis data dan operasi CRUD yang cepat dapat dibangun dengan stack modern: Node.js, Express, dan basis data JSON flat-file. Sisi antarmuka pengguna dapat dimaksimalkan performa serta responsivitasnya dengan menggabungkan kerangka kerja CSS seperti Bootstrap 5 dengan jQuery dan ekstensi DataTables.
 
-Aplikasi ini telah mengimplementasikan konsep CRUD (Create, Read, Update, Delete) secara lengkap pada dua entitas utama yaitu data mobil dan data penjual. Setiap proses CRUD berjalan dengan baik, mulai dari penambahan data melalui form, penampilan data dalam bentuk tabel, proses pengubahan data, hingga penghapusan data.
-
-Dalam pengembangannya, aplikasi ini juga telah menggunakan berbagai teknologi yang diwajibkan, seperti:
-- **Bootstrap** untuk tampilan antarmuka yang responsif dan menarik
-- **jQuery** serta plugin seperti **DataTables** dan **jQuery Validate** untuk meningkatkan interaktivitas dan validasi form
-- Penggunaan **format JSON** dalam pengambilan data yang ditampilkan pada tabel secara dinamis
-
-Selain itu, struktur aplikasi telah mengikuti konsep MVC (Model-View-Controller) yang diterapkan oleh CodeIgniter 4, sehingga kode menjadi lebih terorganisir, mudah dipahami, dan mudah dikembangkan.
-
-Dengan demikian, aplikasi yang dibuat tidak hanya memenuhi seluruh persyaratan tugas praktikum, tetapi juga memberikan pengalaman dalam membangun aplikasi web yang terstruktur, interaktif, dan sesuai dengan praktik pengembangan modern.
+Pemisahan antara struktur Backend (layanan Data API REST JSON) dan Antarmuka Klien di SPA HTML memberikan gambaran arsitektur modern dalam web development.
 
 ---
+
 ## 9. Referensi
 
 Berikut adalah beberapa referensi yang digunakan dalam pembuatan aplikasi:
 
-1. CodeIgniter Foundation. (2023). *CodeIgniter 4 User Guide*.  
-   Tersedia pada: https://codeigniter.com/user_guide/
+1. Node.js Foundation. (2023). *Node.js Documentation*.  
+   Tersedia pada: https://nodejs.org/en/docs/ 
 
-2. Bootstrap Team. (2023). *Bootstrap Documentation*.  
-   Tersedia pada: https://getbootstrap.com/docs/5.3/
+2. Express API. (2023). *Express Web Framework*.  
+   Tersedia pada: https://expressjs.com/ 
 
-3. jQuery Foundation. (2023). *jQuery Documentation*.  
-   Tersedia pada: https://api.jquery.com/
+3. Bootstrap Team. (2023). *Bootstrap 5 Documentation*.  
+   Tersedia pada: https://getbootstrap.com/ 
 
 4. DataTables. (2023). *DataTables Manual*.  
    Tersedia pada: https://datatables.net/manual/
 
-5. jQuery Validation Plugin. (2023). *jQuery Validation Documentation*.  
-   Tersedia pada: https://jqueryvalidation.org/documentation/
-
-6. Mozilla Developer Network (MDN). (2023). *Web Development Documentation*.  
-   Tersedia pada: https://developer.mozilla.org/
-
-7. W3Schools. (2023). *HTML, CSS, JavaScript Tutorials*.  
-   Tersedia pada: https://www.w3schools.com/
+5. jQuery Foundation. (2023). *jQuery Documentation*. 
+   Tersedia pada: https://api.jquery.com/ 
 
 ---
 
 ## 10. Link Video Presentasi
-https://drive.google.com/file/d/1Gh-zFWCIhhZ6zAmWEfGo9ZV7yIbkzWGC/view?usp=sharing
+https://drive.google.com/drive/folders/1Ew1cmM5ZKkLyJPhDCnk5y2S6gpHvK0Rb?usp=sharing 
