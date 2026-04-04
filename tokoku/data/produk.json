@@ -1,0 +1,41 @@
+[
+  {
+    "id": "d3c7393c-e5c8-42f4-bcb6-390e4950b1e9",
+    "kode": "PRD-001",
+    "nama": "Laptop ASUS VivoBook 15",
+    "kategori": "Elektronik",
+    "hargaBeli": 7500000,
+    "hargaJual": 9500000,
+    "stok": 12,
+    "satuan": "Unit",
+    "supplier": "PT. ASUS Indonesia",
+    "deskripsi": "Laptop 15.6 inch",
+    "createdAt": "2026-04-04T09:57:07.914Z"
+  },
+  {
+    "id": "b7e9eceb-e80c-4806-b031-1650467b03db",
+    "kode": "PRD-002",
+    "nama": "Kaos Polos Premium",
+    "kategori": "Pakaian",
+    "hargaBeli": 35000,
+    "hargaJual": 75000,
+    "stok": 150,
+    "satuan": "Pcs",
+    "supplier": "CV. Textile Jaya",
+    "deskripsi": "Cotton combed 30s",
+    "createdAt": "2026-04-04T09:57:07.915Z"
+  },
+  {
+    "id": "e9967020-7494-4b04-8eac-d5e8c92468d0",
+    "kode": "PRD-003",
+    "nama": "Mie Instan Goreng",
+    "kategori": "Makanan & Minuman",
+    "hargaBeli": 2800,
+    "hargaJual": 4000,
+    "stok": 3,
+    "satuan": "Pcs",
+    "supplier": "PT. Indofood",
+    "deskripsi": "Rasa ayam goreng",
+    "createdAt": "2026-04-04T09:57:07.915Z"
+  }
+]
